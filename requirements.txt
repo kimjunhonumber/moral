@@ -3,4 +3,3 @@ streamlit
 wikipedia==1.4.0
 Pillow
 openpyxl
-io
