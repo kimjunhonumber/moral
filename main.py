@@ -1,3 +1,4 @@
+# main.py
 import streamlit as st
 import os
 
@@ -15,19 +16,28 @@ pages = sorted([f for f in os.listdir(PAGES_DIR) if f.endswith('.py')])
 
 # 페이지 이름 딕셔너리 생성
 page_names = {
-    "1_생각.py": "생각AI",
-    "2_생각_+.py": "생각+(생각의 힘)",
-    "3_배우고_싶은_점.py": "배우고 싶은 점",
-    "4_짧은_문장.py": "짧은 문장",
-    "5_노래_만들기.py": "노래 만들기"
+    "1_생각.py": "1. 생각AI",
+    "1.1_생각+(생각의_힘).py": "1.1 생각+(생각의 힘)",
+    "1.2_생각+(이미지_생성).py": "1.2 생각+(이미지 생성)",
+    "2.1_마음+(배우고_싶은_점).py": "2.1 마음+(배우고 싶은 점)",
+    "2.2_마음+(짧은_문장).py": "2.2 마음+(짧은 문장)",
+    "2.3_마음+(노래).py": "2.3 마음+(노래)",
+    "3_마음AI.py": "3. 마음AI",
+    "3_실천AI.py": "3. 실천AI",
+    "3.1_실천+(계획세우기).py": "3.1 실천+(계획세우기)"
 }
 
 # 사이드바에 페이지 이름 표시
-for page in pages:
-    st.sidebar.markdown(f"[{page_names[page]}]({page})", unsafe_allow_html=True)
+for page in sorted(page_names.keys()):
+    st.sidebar.write(f"[{page_names[page]}](?page={page})")
 
-# 현재 선택된 페이지 파일
-selected_file = st.sidebar.radio("페이지를 선택하세요", pages, format_func=lambda x: page_names[x])
+# 쿼리 스트링에서 페이지 정보 가져오기
+query_params = st.experimental_get_query_params()
+selected_page = query_params.get("page", ["1_생각.py"])[0]
 
 # 선택된 페이지 파일 실행
-exec(open(os.path.join(PAGES_DIR, selected_file)).read())
+if selected_page in pages:
+    exec(open(os.path.join(PAGES_DIR, selected_page), encoding="utf-8").read())
+else:
+    st.write("페이지를 찾을 수 없습니다.")
+
