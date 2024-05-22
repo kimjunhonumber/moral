@@ -16,7 +16,7 @@ pages = sorted([f for f in os.listdir(PAGES_DIR) if f.endswith('.py')])
 # 페이지 이름 딕셔너리 생성
 page_names = {
     "1_생각.py": "생각AI",
-    "2_이미지_생성.py": "이미지 생성",
+    "2_생각_+.py": "생각+(생각의 힘)",
     "3_배우고_싶은_점.py": "배우고 싶은 점",
     "4_짧은_문장.py": "짧은 문장",
     "5_노래_만들기.py": "노래 만들기"
