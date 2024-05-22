@@ -1,4 +1,3 @@
-# main.py
 import streamlit as st
 import os
 
@@ -29,7 +28,7 @@ page_names = {
 
 # 사이드바에 페이지 이름 표시
 for page in sorted(page_names.keys()):
-    st.sidebar.write(f"[{page_names[page]}](?page={page})")
+    st.sidebar.write(f"[{page_names[page]}]({page})")
 
 # 쿼리 스트링에서 페이지 정보 가져오기
 query_params = st.experimental_get_query_params()
