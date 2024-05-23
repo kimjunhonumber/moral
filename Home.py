@@ -129,5 +129,4 @@ with col10:
     img10 = load_image('images/실천의지키우기.png')  # 올바른 이미지 경로를 지정하세요.
     if img10:
         st.image(img10)
-    st.markdown('</div>', unsafe_allow_html=True) 클릭을 하면 해당페이지로 이동할 수 있도록 코드를 작성해줘, 예를 들어 실천을 클릭하면 실천과 관련된 페이지로 이동할 수 있게 해줘
-
+    st.markdown('</div>', unsafe_allow_html=True) 
