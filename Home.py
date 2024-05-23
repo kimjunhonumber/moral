@@ -18,7 +18,7 @@ def add_divider(color):
 col1, col2 = st.columns([1, 5])
 
 with col1:
-    img_title = load_image('images/덕이.png')  # 타이틀 옆에 삽입할 이미지 경로를 지정하세요.
+    img_title = load_image('/mnt/data/image.png')  # 타이틀 옆에 삽입할 이미지 경로를 지정하세요.
     if img_title:
         st.image(img_title, width=100)
 
@@ -35,7 +35,8 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
-    link = "https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81AI"
+    link = "1_생각AI"
+    st.markdown(f'<a href="/{link}" target="_self">', unsafe_allow_html=True)
     st.markdown('<div style="background-color:#ADD8E6; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">생각AI</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">덕목의 의미    <br>도덕적 상황</p>', unsafe_allow_html=True)
@@ -43,8 +44,11 @@ with col1:
     if img1:
         st.image(img1)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</a>', unsafe_allow_html=True)
 
 with col2:
+    link = "2_생각+_(생각의_힘)"
+    st.markdown(f'<a href="/{link}" target="_self">', unsafe_allow_html=True)
     st.markdown('<div style="background-color:#F08080; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">생각+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">아는 힘, 생각하는 힘, <br>마음의 힘, 행동의 힘</p>', unsafe_allow_html=True)
@@ -52,8 +56,11 @@ with col2:
     if img2:
         st.image(img2)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</a>', unsafe_allow_html=True)
 
 with col3:
+    link = "3_생각+_(이미지_생성)"
+    st.markdown(f'<a href="/{link}" target="_self">', unsafe_allow_html=True)
     st.markdown('<div style="background-color:#90EE90; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">생각+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">이미지 생성    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
@@ -61,11 +68,14 @@ with col3:
     if img3:
         st.image(img3)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</a>', unsafe_allow_html=True)
 
 # 2행
 col4, col5, col6, col7 = st.columns([1, 1, 1, 1])
 
 with col4:
+    link = "4_마음AI"
+    st.markdown(f'<a href="/{link}" target="_self">', unsafe_allow_html=True)
     st.markdown('<div style="background-color:#FFB6C1; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음AI</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">나라면 어떻게?, 공감하는 방법, 고민해결</p>', unsafe_allow_html=True)
@@ -73,8 +83,11 @@ with col4:
     if img4:
         st.image(img4)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</a>', unsafe_allow_html=True)
 
 with col5:
+    link = "5_마음+_(배우고_싶은점)"
+    st.markdown(f'<a href="/{link}" target="_self">', unsafe_allow_html=True)
     st.markdown('<div style="background-color:#FFD700; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">배우고 싶은 점과  <br>부족한 점</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
@@ -82,8 +95,11 @@ with col5:
     if img5:
         st.image(img5)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</a>', unsafe_allow_html=True)
 
 with col6:
+    link = "6_마음+_(짧은문장)"
+    st.markdown(f'<a href="/{link}" target="_self">', unsafe_allow_html=True)
     st.markdown('<div style="background-color:#87CEFA; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">짧은 문장 만들기 <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)
@@ -91,8 +107,11 @@ with col6:
     if img6:
         st.image(img6)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</a>', unsafe_allow_html=True)
 
 with col7:
+    link = "7_마음+_(노래_만들기)"
+    st.markdown(f'<a href="/{link}" target="_self">', unsafe_allow_html=True)
     st.markdown('<div style="background-color:#FFA07A; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">노래 만들기    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
@@ -100,11 +119,14 @@ with col7:
     if img7:
         st.image(img7)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</a>', unsafe_allow_html=True)
 
 # 3행
 col8, col9, col10 = st.columns([1, 1, 1])
 
 with col8:
+    link = "9_실천AI"
+    st.markdown(f'<a href="/{link}" target="_self">', unsafe_allow_html=True)
     st.markdown('<div style="background-color:#98FB98; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">실천AI</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">나라면 어떻게?, <br>공감하는 방법 알기</p>', unsafe_allow_html=True)
@@ -112,8 +134,11 @@ with col8:
     if img8:
         st.image(img8)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</a>', unsafe_allow_html=True)
 
 with col9:
+    link = "8_실천+_(계획세우기)"
+    st.markdown(f'<a href="/{link}" target="_self">', unsafe_allow_html=True)
     st.markdown('<div style="background-color:#E6E6FA; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">실천 계획  <br>세우기</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
@@ -121,13 +146,18 @@ with col9:
     if img9:
         st.image(img9)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</a>', unsafe_allow_html=True)
 
 with col10:
+    link = "7_실천+_(노래_만들기)"
+    st.markdown(f'<a href="/{link}" target="_self">', unsafe_allow_html=True)
     st.markdown('<div style="background-color:#F0E68C; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">실천 의지    <br>키우기</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
+    st.markdown('<p style="text-align:center;">실천 의지    <br>키우기</p>', unsafe_allow_html=True)
     img10 = load_image('images/실천의지키우기.png')  # 올바른 이미지 경로를 지정하세요.
     if img10:
         st.image(img10)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</a>', unsafe_allow_html=True)
+
 
