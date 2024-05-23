@@ -51,7 +51,7 @@ penalties = st.text_area("상황에서 내가 할 수 있는 도덕적 행동은
 st.divider()
 
 @st.cache_data  # st.experimental_memo 대신 st.cache_data 사용
-def generate_law_document(problem, ideal, solution, government_action, penalties):
+def generate_moral_document(problem, ideal, solution, government_action, penalties):
     persona = f'''
     이 프롬프트는 사용자로부터 제공된 도덕적 상황, 겪은 상황을 통해서 도덕적으로 알게된 것, 그 상황에 대한 나의 판단, 겪은 상황에서 자신이 느낀점, 도덕적 판단을 내리나서 내가 하는 행동을 바탕으로, 
     나의 도덕적 행동에 대해서 평가에 도움을 주는 GPT 모델입니다. 이 도덕적 모델은 나의 상황에 대해 도덕적 지식과 생각 그리고 감정등을 판단하여 이상적인 도덕적 행동을 하기위한 구체적인 방안을 제시해야 합니다.
