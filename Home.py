@@ -129,5 +129,4 @@ with col10:
     if img10:
         st.image(img10)
     st.markdown('</div>', unsafe_allow_html=True)
-각항목에 링크를 거는 코드를 작성해줘
 
