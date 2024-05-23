@@ -88,7 +88,7 @@ with col5:
     st.markdown('<div style="background-color:#FFD700; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">배우고 싶은 점과  <br>부족한 점</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
-    img_html = image_to_html('images/반성하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/생각AI')
+    img_html = image_to_html('images/반성하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%B0%B0%EC%9A%B0%EA%B3%A0_%EC%8B%B6%EC%9D%80%EC%A0%90)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
