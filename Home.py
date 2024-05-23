@@ -49,7 +49,7 @@ with col2:
     st.markdown('<p style="text-align:center;">아는 힘, 생각하는 힘, <br>마음의 힘, 행동의 힘</p>', unsafe_allow_html=True)
     img2 = load_image('images/상황생각하기.png')  # 올바른 이미지 경로를 지정하세요.
     if img2:
-        st.markdown('<a href="http://example.com"><img src="images/상황생각하기.png" width="100%"></a>', unsafe_allow_html=True)
+        st.markdown('<a href="https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81+(%EC%83%9D%EA%B0%81%EC%9D%98_%ED%9E%98)"><img src="images/상황생각하기.png" width="100%"></a>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col3:
