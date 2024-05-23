@@ -83,36 +83,36 @@ with col4:
         navigate_to("4_마음AI")
     st.markdown('<div style="background-color:#FFB6C1; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음AI</h3>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">나라면 어떻게?, 공감하는 방법, 고민해결</p>', unsafe.allow_html=True)
+    st.markdown('<p style="text-align:center;">나라면 어떻게?, 공감하는 방법, 고민해결</p>', unsafe_allow_html=True)
     image_with_link('images/마음이.png', "4_마음AI")
-    st.markdown('</div>', unsafe.allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with col5:
     if st.button("마음+ 배우고 싶은 점"):
         navigate_to("5_마음+(배우고 싶은점)")
-    st.markdown('<div style="background-color:#FFD700; padding: 10px; border-radius: 10px; text-align:center;">', unsafe.allow_html=True)
-    st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe.allow_html=True)
-    st.markdown('<p style="text-align:center;">배우고 싶은 점과  <br>부족한 점</p>', unsafe.allow_html=True)  # 공백을 추가하여 두 줄로 표현
+    st.markdown('<div style="background-color:#FFD700; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;">배우고 싶은 점과  <br>부족한 점</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     image_with_link('images/반성하기.png', "5_마음+(배우고 싶은점)")
-    st.markdown('</div>', unsafe.allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with col6:
     if st.button("마음+ 짧은 문장"):
         navigate_to("6_마음+(짧은문장)")
-    st.markdown('<div style="background-color:#87CEFA; padding: 10px; border-radius: 10px; text-align:center;">', unsafe.allow_html=True)
-    st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe.allow_html=True)
-    st.markdown('<p style="text-align:center;">짧은 문장 만들기 <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe.allow_html=True)
+    st.markdown('<div style="background-color:#87CEFA; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;">짧은 문장 만들기 <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)
     image_with_link('images/마음문장만들기.png', "6_마음+(짧은문장)")
-    st.markdown('</div>', unsafe.allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with col7:
     if st.button("마음+ 노래 만들기"):
         navigate_to("7_마음+(노래 만들기)")
-    st.markdown('<div style="background-color:#FFA07A; padding: 10px; border-radius: 10px; text-align:center;">', unsafe.allow_html=True)
-    st.markdown('<h3 style="text.align:center;">마음+</h3>', unsafe.allow_html=True)
-    st.markdown('<p style="text.align:center;">노래 만들기    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe.allow_html=True)  # 공백을 추가하여 두 줄로 표현
+    st.markdown('<div style="background-color:#FFA07A; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;">노래 만들기    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe.allow_html=True)  # 공백을 추가하여 두 줄로 표현
     image_with_link('images/가사추천하기.png', "7_마음+(노래 만들기)")
-    st.markdown('</div>', unsafe.allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # 3행
 col8, col9, col10 = st.columns([1, 1, 1])
@@ -120,16 +120,16 @@ col8, col9, col10 = st.columns([1, 1, 1])
 with col8:
     if st.button("실천AI"):
         navigate_to("9_실천AI")
-    st.markdown('<div style="background-color:#98FB98; padding: 10px; border-radius: 10px; text.align:center;">', unsafe.allow_html=True)
-    st.markdown('<h3 style="text.align:center;">실천AI</h3>', unsafe.allow_html=True)
-    st.markdown('<p style="text.align:center;">나라면 어떻게?, <br>공감하는 방법 알기</p>', unsafe.allow_html=True)
+    st.markdown('<div style="background-color:#98FB98; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<h3 style="text-align:center;">실천AI</h3>', unsafe.allow_html=True)
+    st.markdown('<p style="text-align:center;">나라면 어떻게?, <br>공감하는 방법 알기</p>', unsafe_allow_html=True)
     image_with_link('images/실천이.png', "9_실천AI")
     st.markdown('</div>', unsafe.allow_html=True)
 
 with col9:
     if st.button("실천+ 계획 세우기"):
         navigate_to("8_실천+(계획세우기)")
-    st.markdown('<div style="background-color:#E6E6FA; padding: 10px; border-radius: 10px; text.align:center;">', unsafe.allow_html=True)
+    st.markdown('<div style="background-color:#E6E6FA; padding: 10px; border-radius: 10px; text.align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text.align:center;">실천+</h3>', unsafe.allow_html=True)
     st.markdown('<p style="text.align:center;">실천 계획  <br>세우기</p>', unsafe.allow_html=True)  # 공백을 추가하여 두 줄로 표현
     image_with_link('images/실천계획세우기.png', "8_실천+(계획세우기)")
