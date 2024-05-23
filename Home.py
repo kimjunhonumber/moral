@@ -115,7 +115,7 @@ with col8:
     st.markdown('<div style="background-color:#98FB98; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">실천AI</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">나라면 어떻게?, <br>공감하는 방법 알기</p>', unsafe_allow_html=True)
-    img_html = image_to_html('images/실천이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/생각AI')
+    img_html = image_to_html('images/실천이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -123,7 +123,7 @@ with col9:
     st.markdown('<div style="background-color:#E6E6FA; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">실천 계획  <br>세우기</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
-    img_html = image_to_html('images/실천계획세우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/생각AI')
+    img_html = image_to_html('images/실천계획세우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9C+(%EA%B3%84%ED%9A%8D%EC%84%B8%EC%9A%B0%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
