@@ -93,7 +93,7 @@ with col7:
     link = "7_마음+(노래 만들기)"
     st.markdown('<div style="background-color:#FFA07A; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">노래 만들기    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe.allow_html=True)  # 공백을 추가하여 두 줄로 표현
+    st.markdown('<p style="text-align:center;">노래 만들기    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     image_with_link('images/가사추천하기.png', link)
     st.markdown('</div>', unsafe_allow_html=True)
 
