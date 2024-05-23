@@ -124,7 +124,7 @@ with col8:
     st.markdown('<h3 style="text-align:center;">실천AI</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">나라면 어떻게?, <br>공감하는 방법 알기</p>', unsafe_allow_html=True)
     image_with_link('images/실천이.png', "9_실천AI")
-    st.markdown('</div>', unsafe.allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with col9:
     if st.button("실천+ 계획 세우기"):
