@@ -47,7 +47,7 @@ with col1:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
-    link = "https://example.com/생각+"
+    link = "https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81+(%EC%83%9D%EA%B0%81%EC%9D%98_%ED%9E%98"
     img_path = 'images/상황생각하기.png'
     img_base64 = get_image_base64(img_path)
     st.markdown(f'<a href="{link}" target="_blank"><img src="data:image/png;base64,{img_base64}" width="100%"></a>', unsafe_allow_html=True)
