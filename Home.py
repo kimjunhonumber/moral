@@ -113,5 +113,15 @@ with col9:
     st.markdown('<div style="background-color:#E6E6FA; padding: 10px; border-radius: 10px; text.align:center;">', unsafe.allow_html=True)
     st.markdown('<h3 style="text.align:center;">실천+</h3>', unsafe.allow_html=True)
     st.markdown('<p style="text.align:center;">실천 계획  <br>세우기</p>', unsafe.allow_html=True)  # 공백을 추가하여 두 줄로 표현
-    image_with_link('images/실천
+    image_with_link('images/실천계획세우기.png', link)
+    st.markdown('</div>', unsafe.allow_html=True)
+
+with col10:
+    link = "9_실천AI"
+    st.markdown('<div style="background-color:#F0E68C; padding: 10px; border-radius: 10px; text.align:center;">', unsafe.allow_html=True)
+    st.markdown('<h3 style="text.align:center;">실천+</h3>', unsafe.allow.html=True)
+    st.markdown('<p style="text.align:center;">실천 의지    <br>키우기</p>', unsafe.allow.html=True)  # 공백을 추가하여 두 줄로 표현
+    image_with_link('images/실천의지키우기.png', link)
+    st.markdown('</div>', unsafe.allow.html=True)
+
 
