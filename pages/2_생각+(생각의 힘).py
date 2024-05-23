@@ -62,6 +62,7 @@ def generate_moral_document(problem, ideal, solution, government_action, penalti
     겪은 상황을 통해서 한 나의 판단은: {solution}
     겪은 상황에서 자신을 돌아 보면서 나의 마음 표현하기: {government_action}
     상황에서 내가 할 수 있는 도덕적 행동은: {penalties}
+    GPT는 이 정보를 바탕으로 도덕적 행동에 대해 첫째, 둘째, 셋째 형식으로 피드백을 제공해 주세요.
     '''
 
     response = client.chat.completions.create(
