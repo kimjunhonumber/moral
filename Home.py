@@ -35,6 +35,7 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
+    link = "https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81AI"
     st.markdown('<div style="background-color:#ADD8E6; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">생각AI</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">덕목의 의미    <br>도덕적 상황</p>', unsafe_allow_html=True)
