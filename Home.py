@@ -12,9 +12,7 @@ def load_image(img_path):
 
 # HTML을 사용하여 이미지에 링크를 추가하는 함수
 def image_with_link(image_path, link):
-    img = load_image(image_path)
-    if img:
-        st.markdown(f'<a href="{link}" target="_self"><img src="{image_path}" width="100%"></a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{link}" target="_self"><img src="{image_path}" width="100%"></a>', unsafe_allow_html=True)
 
 # 스타일 추가 함수
 def add_divider(color):
@@ -86,43 +84,44 @@ with col5:
 with col6:
     link = "pages/6_마음+_(짧은문장).py"
     st.markdown('<div style="background-color:#87CEFA; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="text.align:center;">마음+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">짧은 문장 만들기 <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)
     image_with_link('images/마음문장만들기.png', link)
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe.allow_html=True)
 
 with col7:
     link = "pages/7_마음+_(노래_만들기).py"
     st.markdown('<div style="background-color:#FFA07A; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">노래 만들기    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
+    st.markdown('<h3 style="text.align:center;">마음+</h3>', unsafe_allow_html=True)
+    st.markdown('<p style="text.align:center;">노래 만들기    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe.allow_html=True)  # 공백을 추가하여 두 줄로 표현
     image_with_link('images/가사추천하기.png', link)
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe.allow_html=True)
 
 # 3행
 col8, col9, col10 = st.columns([1, 1, 1])
 
 with col8:
     link = "pages/9_실천AI.py"
-    st.markdown('<div style="background-color:#98FB98; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">실천AI</h3>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">나라면 어떻게?, <br>공감하는 방법 알기</p>', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#98FB98; padding: 10px; border-radius: 10px; text.align:center;">', unsafe_allow_html=True)
+    st.markdown('<h3 style="text.align:center;">실천AI</h3>', unsafe.allow_html=True)
+    st.markdown('<p style="text.align:center;">나라면 어떻게?, <br>공감하는 방법 알기</p>', unsafe.allow_html=True)
     image_with_link('images/실천이.png', link)
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe.allow_html=True)
 
 with col9:
     link = "pages/8_실천+_(계획세우기).py"
-    st.markdown('<div style="background-color:#E6E6FA; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">실천 계획  <br>세우기</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
+    st.markdown('<div style="background-color:#E6E6FA; padding: 10px; border-radius: 10px; text.align:center;">', unsafe.allow_html=True)
+    st.markdown('<h3 style="text.align:center;">실천+</h3>', unsafe.allow_html=True)
+    st.markdown('<p style="text.align:center;">실천 계획  <br>세우기</p>', unsafe.allow_html=True)  # 공백을 추가하여 두 줄로 표현
     image_with_link('images/실천계획세우기.png', link)
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe.allow_html=True)
 
 with col10:
     link = "pages/9_실천AI.py"
-    st.markdown('<div style="background-color:#F0E68C; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">실천 의지    <br>키우기</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
+    st.markdown('<div style="background-color:#F0E68C; padding: 10px; border-radius: 10px; text.align:center;">', unsafe.allow_html=True)
+    st.markdown('<h3 style="text.align:center;">실천+</h3>', unsafe.allow_html=True)
+    st.markdown('<p style="text.align:center;">실천 의지    <br>키우기</p>', unsafe.allow_html=True)  # 공백을 추가하여 두 줄로 표현
     image_with_link('images/실천의지키우기.png', link)
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe.allow_html=True)
+
 
