@@ -30,7 +30,7 @@ def add_data(date, action):
 data = load_data()
 
 # Streamlit UI 구성
-st.title('나의 도덕 행위 기록')
+st.title('나의 도덕 실천 놀이터')
 
 st.write("오늘 내가 한 도덕 실천은?")
 action = st.text_area("도덕 실천 내용", "")
