@@ -142,7 +142,7 @@ with col10:
     st.markdown('<h3 style="text.align:center;">실천+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text.align:center;">실천 의지    <br>키우기</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     image_with_link('images/실천의지키우기.png', "8_실천+(계획세우기)")
-    st.markdown('</div>', unsafe.allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # 현재 페이지 로드
 if current_page != "home":
