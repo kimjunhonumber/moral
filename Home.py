@@ -124,4 +124,3 @@ with col10:
     image_with_link('images/실천의지키우기.png', link)
     st.markdown('</div>', unsafe_allow.html=True)
 
-
