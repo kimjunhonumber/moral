@@ -69,7 +69,7 @@ with col3:
     st.markdown('<div style="background-color:#90EE90; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">생각+</h3>', unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;">이미지 생성    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
-    img_html = image_to_html('images/이미지생성.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/생각AI')
+    img_html = image_to_html('images/이미지생성.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81+(%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%83%9D%EC%84%B1)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
