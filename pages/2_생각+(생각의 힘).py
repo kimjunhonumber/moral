@@ -40,10 +40,10 @@ st.header("2. 아는 힘")
 ideal = st.text_area("겪은 상황을 통해서 도덕적으로 알게 된 것은? 예시) 부모님 말씀을 잘듣는 것은 바른 행동이다.")
 
 st.header("3. 생각하는 힘")
-solution = st.text_area("겪은 상황을 통해서 한 나의 판단은? 예시) 부모님의 심부름을 해드리면 나의 마음도 뿌듯할것이라고 판단된다.")
+solution = st.text_area("겪은 상황을 통해서 한 나의 판단은? 예시) 부모님의 심부름을 해드리면 내 마음이 뿌듯하다고 판단된다.")
 
 st.header("4. 마음의 힘")
-government_action = st.text_area("겪은 상황에서 자신을 돌아 보면서 나의 마음 표현하기? 예시) 부모님을 돕는 것은 기뿐일이다.")
+government_action = st.text_area("겪은 상황에서 자신을 돌아 보면서 나의 마음 표현하기? 예시) 부모님을 돕는 것은 기쁜 일이다.")
 
 st.header("5. 행동의 힘")
 penalties = st.text_area("상황에서 내가 할 수 있는 도덕적 행동은? 예시) 부모님을 항상 도와드릴 것이다.")
@@ -77,17 +77,17 @@ def generate_law_document(problem, ideal, solution, government_action, penalties
 
 # 법률안 생성 버튼
 if st.button("도덕적 행동 평가서"):
-    law_document = generate_law_document(problem, ideal, solution, government_action, penalties)
+    law_document = generate_moral_document(problem, ideal, solution, government_action, penalties)
     st.subheader("도덕적 행동 평가")
-    st.write(law_document)
+    st.write(moral_document)
     
     # 생성된 법률안을 TXT 파일로 변환
-    txt_file = BytesIO(law_document.encode('utf-8'))
+    txt_file = BytesIO(moral_document.encode('utf-8'))
     
     # 다운로드 링크 제공
     st.download_button(
         label="나의 도덕행동 평가서",
         data=txt_file,
-        file_name="generated_law_document.txt",
+        file_name="generated_moral_document.txt",
         mime="text/plain"
     )
