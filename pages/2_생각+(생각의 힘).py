@@ -1,12 +1,11 @@
-from openai import OpenAI
+import openai
 import streamlit as st
 import random
 from io import BytesIO  # 파일 다운로드를 위해 필요
 import os
 
 # API 키 설정
-api_key = st.secrets["OPENAI_API_KEY"]
-client = OpenAI(api_key=api_key)
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(layout="wide")
 
@@ -44,7 +43,7 @@ def generate_moral_document(problem, ideal, solution, government_action, penalti
     상황에서 내가 할 수 있는 도덕적 행동은: {penalties}
     '''
 
-    response = client.Completion.create(
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": persona},
