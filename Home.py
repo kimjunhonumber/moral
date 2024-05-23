@@ -130,3 +130,4 @@ with col10:
         st.markdown('<a href="http://example.com"><img src="images/실천의지키우기.png" width="100%"></a>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
+
