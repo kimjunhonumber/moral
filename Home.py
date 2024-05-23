@@ -114,7 +114,7 @@ col8, col9, col10 = st.columns([1, 1, 1])
 with col8:
     st.markdown('<div style="background-color:#98FB98; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">실천AI</h3>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">나라면 어떻게?, <br>공감하는 방법 알기</p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;">덕목 실천방법, <br>실천의 좋은 점</p>', unsafe_allow_html=True)
     img_html = image_to_html('images/실천이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
