@@ -1,4 +1,4 @@
-import streamlit as st
+ import streamlit as st
 from PIL import Image
 
 # 이미지 로드 함수
@@ -13,10 +13,6 @@ def load_image(img_path):
 # 스타일 추가 함수
 def add_divider(color):
     st.markdown(f"<hr style='border: 3px solid {color};' />", unsafe_allow_html=True)
-
-# HTML을 사용하여 이미지에 링크를 추가하는 함수
-def image_with_link(image_path, link):
-    return f'<a href="/{link}" target="_self"><img src="{image_path}" width="100%"></a>'
 
 # 타이틀과 이미지를 나란히 배치
 col1, col2 = st.columns([1, 5])
@@ -44,7 +40,7 @@ with col1:
     st.markdown('<p style="text-align:center;">덕목의 의미    <br>도덕적 상황</p>', unsafe_allow_html=True)
     img1 = load_image('images/생각이.png')  # 올바른 이미지 경로를 지정하세요.
     if img1:
-        st.markdown(image_with_link('images/생각이.png', 'pages/1_생각AI.py'), unsafe_allow_html=True)
+        st.image(img1)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
@@ -53,7 +49,7 @@ with col2:
     st.markdown('<p style="text-align:center;">아는 힘, 생각하는 힘, <br>마음의 힘, 행동의 힘</p>', unsafe_allow_html=True)
     img2 = load_image('images/상황생각하기.png')  # 올바른 이미지 경로를 지정하세요.
     if img2:
-        st.markdown(image_with_link('images/상황생각하기.png', 'pages/2_생각+(생각의 힘).py'), unsafe_allow_html=True)
+        st.image(img2)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col3:
@@ -62,7 +58,7 @@ with col3:
     st.markdown('<p style="text-align:center;">이미지 생성    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     img3 = load_image('images/이미지생성.png')  # 올바른 이미지 경로를 지정하세요.
     if img3:
-        st.markdown(image_with_link('images/이미지생성.png', 'pages/3_생각+(이미지 생성).py'), unsafe_allow_html=True)
+        st.image(img3)
     st.markdown('</div>', unsafe_allow_html=True)
 
 # 2행
@@ -74,7 +70,7 @@ with col4:
     st.markdown('<p style="text-align:center;">나라면 어떻게?, 공감하는 방법, 고민해결</p>', unsafe_allow_html=True)
     img4 = load_image('images/마음이.png')  # 올바른 이미지 경로를 지정하세요.
     if img4:
-        st.markdown(image_with_link('images/마음이.png', 'pages/4_마음AI.py'), unsafe_allow_html=True)
+        st.image(img4)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col5:
@@ -83,7 +79,7 @@ with col5:
     st.markdown('<p style="text-align:center;">배우고 싶은 점과  <br>부족한 점</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     img5 = load_image('images/반성하기.png')  # 올바른 이미지 경로를 지정하세요.
     if img5:
-        st.markdown(image_with_link('images/반성하기.png', 'pages/5_마음+(배우고 싶은점).py'), unsafe_allow_html=True)
+        st.image(img5)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col6:
@@ -92,7 +88,7 @@ with col6:
     st.markdown('<p style="text-align:center;">짧은 문장 만들기 <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)
     img6 = load_image('images/마음문장만들기.png')  # 올바른 이미지 경로를 지정하세요.
     if img6:
-        st.markdown(image_with_link('images/마음문장만들기.png', 'pages/6_마음+(짧은문장).py'), unsafe_allow_html=True)
+        st.image(img6)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col7:
@@ -101,7 +97,7 @@ with col7:
     st.markdown('<p style="text-align:center;">노래 만들기    <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     img7 = load_image('images/가사추천하기.png')  # 올바른 이미지 경로를 지정하세요.
     if img7:
-        st.markdown(image_with_link('images/가사추천하기.png', 'pages/7_마음+(노래 만들기).py'), unsafe_allow_html=True)
+        st.image(img7)
     st.markdown('</div>', unsafe_allow_html=True)
 
 # 3행
@@ -113,7 +109,7 @@ with col8:
     st.markdown('<p style="text-align:center;">나라면 어떻게?, <br>공감하는 방법 알기</p>', unsafe_allow_html=True)
     img8 = load_image('images/실천이.png')  # 올바른 이미지 경로를 지정하세요.
     if img8:
-        st.markdown(image_with_link('images/실천이.png', 'pages/9_실천AI.py'), unsafe_allow_html=True)
+        st.image(img8)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col9:
@@ -122,7 +118,7 @@ with col9:
     st.markdown('<p style="text-align:center;">실천 계획  <br>세우기</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     img9 = load_image('images/실천계획세우기.png')  # 올바른 이미지 경로를 지정하세요.
     if img9:
-        st.markdown(image_with_link('images/실천계획세우기.png', 'pages/8_실천+(계획세우기).py'), unsafe_allow_html=True)
+        st.image(img9)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col10:
@@ -131,5 +127,5 @@ with col10:
     st.markdown('<p style="text-align:center;">실천 의지    <br>키우기</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     img10 = load_image('images/실천의지키우기.png')  # 올바른 이미지 경로를 지정하세요.
     if img10:
-        st.markdown(image_with_link('images/실천의지키우기.png', 'pages/8_실천+(계획세우기).py'), unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_allow_html=True)
+        st.image(img10)
+    st.markdown('</div>', unsafe_allow_html=True) 
