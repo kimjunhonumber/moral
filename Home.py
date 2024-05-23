@@ -128,7 +128,7 @@ with col9:
 with col10:
     st.markdown('<div style="background-color:#F0E68C; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">실천 의지    <br>키우기</p>', unsafe.allow_html=True)  # 공백을 추가하여 두 줄로 표현
+    st.markdown('<p style="text-align:center;">실천 의지    <br>키우기</p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     img10 = load_image('images/실천의지키우기.png')  # 올바른 이미지 경로를 지정하세요.
     if img10:
         st.markdown(image_with_link('images/실천의지키우기.png', 'pages/8_실천+(계획세우기).py'), unsafe_allow_html=True)
