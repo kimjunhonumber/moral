@@ -128,4 +128,4 @@ with col10:
     img10 = load_image('images/실천의지키우기.png')  # 올바른 이미지 경로를 지정하세요.
     if img10:
         st.image(img10)
-    st.markdown('</div>', unsafe_allow_html=True) 
+    st.markdown('</div>', unsafe_allow_html=True)
