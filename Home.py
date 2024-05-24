@@ -50,7 +50,7 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
-    st.markdown('<div style="background-color:#5A9BD5; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#4169E1; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">생각AI</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/생각이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81AI')
     st.markdown(img_html, unsafe_allow_html=True)
@@ -58,7 +58,7 @@ with col1:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
-    st.markdown('<div style="background-color:#5A9BD5; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#87CEEB; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">생각+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/상황생각하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81+(%EC%83%9D%EA%B0%81%EC%9D%98_%ED%9E%98)')
     st.markdown(img_html, unsafe_allow_html=True)
@@ -66,7 +66,7 @@ with col2:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col3:
-    st.markdown('<div style="background-color:#5A9BD5; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#87CEEB; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">생각+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/이미지생성.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81+(%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%83%9D%EC%84%B1)')
     st.markdown(img_html, unsafe_allow_html=True)
