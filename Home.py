@@ -85,7 +85,7 @@ with col4:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col5:
-    st.markdown('<div style="background-color:#FFD700; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#FFE4E1 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/반성하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%B0%B0%EC%9A%B0%EA%B3%A0_%EC%8B%B6%EC%9D%80%EC%A0%90)')
     st.markdown(img_html, unsafe_allow_html=True)
@@ -93,7 +93,7 @@ with col5:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col6:
-    st.markdown('<div style="background-color:#87CEFA; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#FFE4E1; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/마음문장만들기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EC%A7%A7%EC%9D%80%EB%AC%B8%EC%9E%A5)')
     st.markdown(img_html, unsafe_allow_html=True)
@@ -101,7 +101,7 @@ with col6:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col7:
-    st.markdown('<div style="background-color:#FFA07A; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#FFE4E1; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/가사추천하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%85%B8%EB%9E%98_%EB%A7%8C%EB%93%A4%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
@@ -112,7 +112,7 @@ with col7:
 col8, col9, col10 = st.columns([1, 1, 1])
 
 with col8:
-    st.markdown('<div style="background-color:#98FB98; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#32CD32 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">실천AI</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/실천이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
     st.markdown(img_html, unsafe_allow_html=True)
@@ -120,7 +120,7 @@ with col8:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col9:
-    st.markdown('<div style="background-color:#E6E6FA; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#90EE90 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/실천계획세우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9C+(%EA%B3%84%ED%9A%8D%EC%84%B8%EC%9A%B0%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
@@ -128,7 +128,7 @@ with col9:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col10:
-    st.markdown('<div style="background-color:#F0E68C; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#90EE90 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/실천의지키우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
     st.markdown(img_html, unsafe_allow_html=True)
