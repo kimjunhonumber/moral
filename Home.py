@@ -85,7 +85,7 @@ with col4:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col5:
-    st.markdown('<div style="background-color:#FFDAB9  ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#FFE4E1   ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/반성하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%B0%B0%EC%9A%B0%EA%B3%A0_%EC%8B%B6%EC%9D%80%EC%A0%90)')
     st.markdown(img_html, unsafe_allow_html=True)
@@ -93,7 +93,7 @@ with col5:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col6:
-    st.markdown('<div style="background-color:#FFDAB9 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#FFE4E1  ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/마음문장만들기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EC%A7%A7%EC%9D%80%EB%AC%B8%EC%9E%A5)')
     st.markdown(img_html, unsafe_allow_html=True)
@@ -101,7 +101,7 @@ with col6:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col7:
-    st.markdown('<div style="background-color:#FFDAB9 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    st.markdown('<div style="background-color:#FFE4E1  ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/가사추천하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%85%B8%EB%9E%98_%EB%A7%8C%EB%93%A4%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
