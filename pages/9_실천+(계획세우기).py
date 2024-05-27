@@ -23,8 +23,8 @@ if 'data' not in st.session_state:
 
 # 입력 버튼 클릭 시 데이터 저장
 if st.button("입력"):
-    new_data = {'날짜': date, '덕목': virtue, '한 일': action, '느낀 점': thought}
-    st.session_state.data = st.session_state.data.append(new_data, ignore_index=True)
+    new_data = pd.DataFrame({'날짜': [date], '덕목': [virtue], '한 일': [action], '느낀 점': [thought]})
+    st.session_state.data = pd.concat([st.session_state.data, new_data], ignore_index=True)
     st.write("데이터가 저장되었습니다.")
 
 # 저장된 데이터 표시
@@ -42,4 +42,5 @@ if not st.session_state.data.empty:
     ax.set_ylabel("횟수")
 
     st.pyplot(fig)
+
 
