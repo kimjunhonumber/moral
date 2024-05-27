@@ -87,12 +87,14 @@ if st.button("결과 보기"):
     st.write("결과가 저장되었습니다.")
 
     # OpenAI API로 데이터 분석 요청
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt=f"다음은 도덕성 테스트 데이터입니다:\n\n{data}\n\n이 데이터를 분석하고, 도덕성 테스트 결과와 피드백을 작성해 주세요.",
-        max_tokens=500
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": f"다음은 도덕성 테스트 데이터입니다:\n\n{data}\n\n이 데이터를 분석하고, 도덕성 테스트 결과와 피드백을 작성해 주세요."}
+        ]
     )
-    analysis = response.choices[0].text.strip()
+    analysis = response.choices[0].message["content"].strip()
 
     # 분석 결과 출력
     st.markdown("## 도덕성 테스트 결과")
