@@ -3,8 +3,10 @@ import pandas as pd
 import openai
 from datetime import datetime
 
-# OpenAI API 키 설정
-openai.api_key = 'YOUR_OPENAI_API_KEY'
+
+# API 키 설정
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 # 페이지 제목 설정
 st.set_page_config(page_title="도덕성 테스트")
