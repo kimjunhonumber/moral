@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 import openai
+import os
 from datetime import datetime
 
 # OpenAI API 키 설정
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # 페이지 제목 설정
 st.set_page_config(page_title="도덕성 테스트")
@@ -100,5 +100,6 @@ if st.button("결과 보기"):
     # 분석 결과 출력
     st.markdown("## 도덕성 테스트 결과")
     st.write(analysis)
+
 
 
