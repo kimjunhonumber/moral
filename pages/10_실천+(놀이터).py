@@ -86,9 +86,10 @@ if st.button("결과 보기"):
     df = pd.DataFrame([data])
     df.to_excel("도덕성_테스트_결과.xlsx", index=False)
     st.write("결과가 저장되었습니다.")
-
+    
+  
     # OpenAI API로 데이터 분석 요청
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
