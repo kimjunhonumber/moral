@@ -5,7 +5,8 @@ from datetime import datetime
 import os
 
 # OpenAI API 키 설정
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 # 페이지 제목 설정
 st.set_page_config(page_title="도덕성 테스트")
@@ -94,8 +95,8 @@ def analyze_moral_data(name, date, responses, situation1, situation2, situation3
     생각과 느낌: {thoughts}
     총점: {total_score}
     '''
-
-    response = openai.ChatCompletion.create(
+    
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": persona},
