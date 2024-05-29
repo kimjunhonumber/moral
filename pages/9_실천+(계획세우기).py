@@ -16,7 +16,11 @@ name = st.text_input("이름을 적으세요")
 
 # 데이터 입력
 date = st.date_input("날짜")
-virtue = st.text_input("덕목")
+
+# 덕목 드롭다운
+virtues = ["존중", "책임", "정의", "배려", "자주", "성실", "정직", "절제"]
+virtue = st.selectbox("덕목", virtues)
+
 action = st.text_area("한 일")
 thought = st.text_area("느낀 점")
 
@@ -48,4 +52,5 @@ if not st.session_state.data.empty:
     ax.set_ylabel("횟수")
 
     st.pyplot(fig)
+
 
