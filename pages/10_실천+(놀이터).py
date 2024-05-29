@@ -1,12 +1,10 @@
 import streamlit as st
 import pandas as pd
 import openai
-import os
 from datetime import datetime
 
 # OpenAI API 키 설정
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # 페이지 제목 설정
 st.set_page_config(page_title="도덕성 테스트")
@@ -87,10 +85,9 @@ if st.button("결과 보기"):
     df = pd.DataFrame([data])
     df.to_excel("도덕성_테스트_결과.xlsx", index=False)
     st.write("결과가 저장되었습니다.")
-    
-  
+
     # OpenAI API로 데이터 분석 요청
-    response = client.chat.completions.create(
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
