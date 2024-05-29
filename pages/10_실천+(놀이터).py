@@ -5,8 +5,7 @@ from datetime import datetime
 import os
 
 # OpenAI API 키 설정
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # 페이지 제목 설정
 st.set_page_config(page_title="도덕성 테스트")
@@ -70,10 +69,9 @@ st.markdown("## ■ 도덕적 행동 실천을 한 나의 생각과 느낌을 �
 thoughts = st.text_area("", "")
 
 @st.cache_data
-def analyze_moral_data(name, date, responses, situation1, situation2, situation3, thoughts, total_score):
+def analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts, total_score):
     data = {
         "이름": name,
-        "날짜": date,
         "응답": responses,
         "상황1": situation1,
         "상황2": situation2,
@@ -87,7 +85,6 @@ def analyze_moral_data(name, date, responses, situation1, situation2, situation3
     사용자가 제공한 도덕적 상황, 겪은 상황, 판단, 느낌, 행동 등을 기반으로 도덕적 피드백을 작성합니다.
     다음은 사용자가 제공한 내용입니다:
     이름: {name}
-    날짜: {date}
     응답: {responses}
     상황1: {situation1}
     상황2: {situation2}
@@ -95,8 +92,8 @@ def analyze_moral_data(name, date, responses, situation1, situation2, situation3
     생각과 느낌: {thoughts}
     총점: {total_score}
     '''
-    
-    response = client.chat.completions.create(
+
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": persona},
@@ -110,9 +107,10 @@ def analyze_moral_data(name, date, responses, situation1, situation2, situation3
 # 결과 분석 및 피드백
 if st.button("결과 보기"):
     total_score = sum(responses)
-    analysis = analyze_moral_data(name, datetime.now().strftime("%Y-%m-%d %H:%M:%S"), responses, situation1, situation2, situation3, thoughts, total_score)
+    analysis = analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts, total_score)
 
     # 분석 결과 출력
     st.markdown("## 도덕성 테스트 결과")
     st.write(analysis)
+
 
