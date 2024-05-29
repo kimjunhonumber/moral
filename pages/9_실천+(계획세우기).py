@@ -45,9 +45,10 @@ st.write(st.session_state.data)
 if not st.session_state.data.empty:
     count_data = st.session_state.data['덕목'].value_counts()
     colors = plt.cm.tab20.colors  # 다양한 색상 팔레트 사용
+    color_list = [colors[i % len(colors)] for i in range(len(count_data))]
 
     fig, ax = plt.subplots()
-    count_data.plot(kind='bar', ax=ax, color=colors[:len(count_data)])
+    count_data.plot(kind='bar', ax=ax, color=color_list)
     ax.set_title("도덕성 활동기록")
     ax.set_xlabel("덕목")
     ax.set_ylabel("횟수")
