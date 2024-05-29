@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import openai
 from datetime import datetime
+import os
 
 # OpenAI API 키 설정
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -67,14 +68,11 @@ situation3 = st.radio(
 st.markdown("## ■ 도덕적 행동 실천을 한 나의 생각과 느낌을 적어 보세요")
 thoughts = st.text_area("", "")
 
-# 결과 분석 및 피드백
-if st.button("결과 보기"):
-    total_score = sum(responses)
-
-    # 데이터 저장
+@st.cache_data
+def analyze_moral_data(name, date, responses, situation1, situation2, situation3, thoughts, total_score):
     data = {
         "이름": name,
-        "날짜": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "날짜": date,
         "응답": responses,
         "상황1": situation1,
         "상황2": situation2,
@@ -82,20 +80,38 @@ if st.button("결과 보기"):
         "생각과 느낌": thoughts,
         "총점": total_score
     }
-    df = pd.DataFrame([data])
-    df.to_excel("도덕성_테스트_결과.xlsx", index=False)
-    st.write("결과가 저장되었습니다.")
 
-    # OpenAI API로 데이터 분석 요청
+    persona = f'''
+    이 프롬프트는 사용자로부터 제공된 도덕성 테스트 데이터를 분석하고 피드백을 제공하는 GPT 모델입니다.
+    사용자가 제공한 도덕적 상황, 겪은 상황, 판단, 느낌, 행동 등을 기반으로 도덕적 피드백을 작성합니다.
+    다음은 사용자가 제공한 내용입니다:
+    이름: {name}
+    날짜: {date}
+    응답: {responses}
+    상황1: {situation1}
+    상황2: {situation2}
+    상황3: {situation3}
+    생각과 느낌: {thoughts}
+    총점: {total_score}
+    '''
+
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": f"다음은 도덕성 테스트 데이터입니다:\n\n{data}\n\n이 데이터를 분석하고, 도덕성 테스트 결과와 피드백을 작성해 주세요."}
-        ]
+            {"role": "system", "content": persona},
+            {"role": "user", "content": "도덕성 테스트 데이터에 대한 분석과 피드백을 제공해 주세요."}
+        ],
+        max_tokens=1000,
+        temperature=0.7
     )
-    analysis = response['choices'][0]['message']['content'].strip()
+    return response.choices[0].message['content'].strip()
+
+# 결과 분석 및 피드백
+if st.button("결과 보기"):
+    total_score = sum(responses)
+    analysis = analyze_moral_data(name, datetime.now().strftime("%Y-%m-%d %H:%M:%S"), responses, situation1, situation2, situation3, thoughts, total_score)
 
     # 분석 결과 출력
     st.markdown("## 도덕성 테스트 결과")
     st.write(analysis)
+
