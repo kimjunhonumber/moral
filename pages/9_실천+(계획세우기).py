@@ -47,7 +47,7 @@ if not st.session_state.data.empty:
 
     fig, ax = plt.subplots()
     count_data.plot(kind='bar', ax=ax)
-    ax.set_title("덕목별 도덕 활동 횟수")
+    ax.set_title("도덕성 활동기록")
     ax.set_xlabel("덕목")
     ax.set_ylabel("횟수")
 
