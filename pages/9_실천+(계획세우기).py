@@ -44,13 +44,14 @@ st.write(st.session_state.data)
 # 덕목별 데이터 개수를 막대그래프로 표시
 if not st.session_state.data.empty:
     count_data = st.session_state.data['덕목'].value_counts()
+    colors = plt.cm.tab20.colors  # 다양한 색상 팔레트 사용
 
     fig, ax = plt.subplots()
-    count_data.plot(kind='bar', ax=ax)
+    count_data.plot(kind='bar', ax=ax, color=colors[:len(count_data)])
     ax.set_title("도덕성 활동기록")
     ax.set_xlabel("덕목")
     ax.set_ylabel("횟수")
+    ax.set_yticks(range(0, count_data.max() + 2))  # 세로축을 1단위로 설정
 
     st.pyplot(fig)
-
 
