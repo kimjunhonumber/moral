@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 페이지 제목 설정
-st.set_page_config(page_title="도덕성 활동 기록")
+st.set_page_config(page_title="도덕적 행동 기록")
 
 # 제목
 st.title("도덕적 행동 기록")
