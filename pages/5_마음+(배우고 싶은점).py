@@ -34,13 +34,13 @@ st.title("마음+ 마음 본받기")
 
 # 사용자로부터 필요한 정보를 입력받습니다.
 st.header("1. 내가 읽은 위인전을 제목을 적어 봅시다. ")
-problem = st.text_area("행동과 관련된 내가 겪었던 일을 입력하세요. 예시) 부모님의 심부름을 했다.")
+problem = st.text_area("자신이 본받고 싶은 인물을 적어보세요. 예시) 이순신, 손기정 등 ")
 
 st.header("2. 내가 읽은 위인의 본받을 점을 알아봅시다. ")
-ideal = st.text_area("겪은 상황을 통해서 도덕적으로 알게 된 것은? 예시) 부모님 말씀을 잘듣는 것은 바른 행동이다.")
+ideal = st.text_area("위인을 통해서 본받을 인성 핵심 가치는 무엇인가? 예시) 이순신의 나라를 위하는 마음.")
 
 st.header("3. 본받을 점과 연결 시켜서 내가 부족한 점을 적어 보세요")
-solution = st.text_area("겪은 상황을 통해서 한 나의 판단은? 예시) 부모님의 심부름을 해드리면 나의 마음도 뿌듯할것이라고 판단된다.")
+solution = st.text_area("상대방에 대한 배려하는 마음, 성실성, 정직, 예의 등  예시) 나이팅케일 처럼 상대방을 위해 봉사하는 마음이 난 부족한 것 같아.")
 
 
 st.divider()
@@ -66,9 +66,9 @@ def generate_law_document(problem, ideal, solution):
     return response.choices[0].message.content
 
 # 법률안 생성 버튼
-if st.button("도덕적 행동 평가서"):
+if st.button("인성 행동 실천 평가서"):
     law_document = generate_law_document(problem, ideal, solution)
-    st.subheader("도덕적 행동 평가")
+    st.subheader("인성 실천 행동 평가")
     st.write(law_document)
     
     # 생성된 법률안을 TXT 파일로 변환
