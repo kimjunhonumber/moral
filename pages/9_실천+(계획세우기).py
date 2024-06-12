@@ -3,13 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 페이지 제목 설정
-st.set_page_config(page_title="도덕적 행동 기록")
+st.set_page_config(page_title="인성 행동 실천 기록")
 
 # 제목
-st.title("도덕적 행동 기록")
+st.title("인성 행동 실천 기록")
 
 # 데이터 입력 양식
-st.markdown("## 내가 실천한 오늘의 도덕적 행동을 기록하세요.")
+st.markdown("## 내가 실천한 오늘의 바른 인성 행동을 기록하세요.")
 
 # 사용자 이름 입력
 name = st.text_input("이름을 적으세요")
@@ -18,7 +18,7 @@ name = st.text_input("이름을 적으세요")
 date = st.date_input("날짜")
 
 # 덕목 드롭다운
-virtues = ["존중", "책임", "정의", "배려", "자주", "성실", "정직", "절제"]
+virtues = ["예", "효", "정직", "책임", "존중", "배려", "소통", "협동"]
 virtue = st.selectbox("덕목", virtues)
 
 action = st.text_area("한 일")
@@ -49,7 +49,7 @@ if not st.session_state.data.empty:
 
     fig, ax = plt.subplots()
     count_data.plot(kind='bar', ax=ax, color=color_list)
-    ax.set_title("도덕성 활동기록")
+    ax.set_title("인성실천 활동기록")
     ax.set_xlabel("덕목")
     ax.set_ylabel("횟수")
     ax.set_yticks(range(0, count_data.max() + 2))  # 세로축을 1단위로 설정
