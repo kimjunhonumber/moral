@@ -61,9 +61,9 @@ def generate_law_document(problem, ideal):
     return response.choices[0].message.content
 
 # 법률안 생성 버튼
-if st.button("도덕 가사 추천"):
+if st.button("가사 추천"):
     law_document = generate_law_document(problem, ideal)
-    st.subheader("도덕 가사 추천")
+    st.subheader("가사 추천")
     st.write(law_document)
     
     # 생성된 법률안을 TXT 파일로 변환
@@ -71,7 +71,7 @@ if st.button("도덕 가사 추천"):
     
     # 다운로드 링크 제공
     st.download_button(
-        label="나의 도덕행동 평가서",
+        label="나의 행동 평가서",
         data=txt_file,
         file_name="generated_law_document.txt",
         mime="text/plain"
