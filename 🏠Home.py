@@ -54,7 +54,7 @@ with col1:
     st.markdown('<h3 style="text-align:center;">생각AI</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/생각이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81AI')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">덕목의 의미    <br>도덕적 상황</p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;">덕목의 의미    <br>갈등 상황</p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
