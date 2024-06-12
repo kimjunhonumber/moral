@@ -8,16 +8,16 @@ import os
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # 페이지 제목 설정
-st.set_page_config(page_title="도덕성 테스트")
+st.set_page_config(page_title="나의 인성 테스트")
 
 # 제목
-st.title("나의 도덕성 테스트")
+st.title("나의 인성 테스트")
 
 # 사용자 이름 입력
 name = st.text_input("■ 이름을 적으세요", "")
 
 # 설문 문항
-st.markdown("## ■ 도덕성 테스트를 위한 설문입니다. 내가 생각하는 정도를 체크해 보세요")
+st.markdown("## ■ 인성 테스트를 위한 설문입니다. 내가 생각하는 정도를 체크해 보세요")
 
 questions = [
     "모둠 활동을 할 때에는 나의 역할에만 신경 쓰는 것이 좋다.",
@@ -64,8 +64,8 @@ situation3 = st.radio(
      "3 - ‘아~ 저기 줄이 비어 있네? 어떻게 하지? 그래도 그냥 원래 있던 곳으로 가자.’빈 자리를 보고 잠깐 갈등하지만 원래 자리로 간다."]
 )
 
-# 도덕적 행동 실천에 대한 생각과 느낌
-st.markdown("## ■ 도덕적 행동 실천을 한 나의 생각과 느낌을 적어 보세요")
+# 인성 실천 행동에 대한 생각과 느낌
+st.markdown("## ■ 인성 실천 행동을 한 나의 생각과 느낌을 적어 보세요")
 thoughts = st.text_area("", "")
 
 @st.cache_data
