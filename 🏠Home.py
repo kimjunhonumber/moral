@@ -50,13 +50,14 @@ with col1:
     # st.markdown('<h3 style="text-align:center;">생각AI</h3>', unsafe_allow_html=True)
     
     html_code = """
-    <div style="background-color:#4169E1; padding: 5px 10px; border-radius: 10px; text-align:center; color: white; width: fit-content; display: inline-block;">
-    <h3 style="margin: 0; font-size: 18px;">생각AI</h3>
+    <div style="background-color:#4169E1; height: 30px; line-height: 30px; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
+        <h3 style="margin: 0; font-size: 18px; line-height: 30px;">생각AI</h3>
     </div>
     """
     
     # HTML 코드를 Streamlit에 표시
     st.markdown(html_code, unsafe_allow_html=True)
+
     
     img_html = image_to_html('images/생각이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81AI')
     st.markdown(img_html, unsafe_allow_html=True)
