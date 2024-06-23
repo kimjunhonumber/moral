@@ -54,14 +54,13 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
-        html_code = """
-    <div style="background-color:#4169E1; padding: 10px; border-radius: 10px; text-align:center; color: white;">
-        <h3 style="margin: 0;">생각AI</h3>
-    </div>
-    """
-    
-    # HTML 코드를 Streamlit에 표시
-    st.markdown(html_code, unsafe_allow_html=True)
+    html_code = """
+<div style="background-color:#4169E1; padding: 10px; border-radius: 10px; text-align:center; color: white;">
+    <h3 style="margin: 0;">생각AI</h3>
+</div>
+"""
+# HTML 코드를 Streamlit에 표시
+st.markdown(html_code, unsafe_allow_html=True)
 
     st.markdown('<div style="background-color:#4169E1; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     st.markdown('<h3 style="text-align:center;">생각AI</h3>', unsafe_allow_html=True)
