@@ -204,9 +204,11 @@ import streamlit as st
 st.sidebar.markdown("""
     <style>
     .sidebar-text {
-        font-size: 16px;
+        font-size: 24px;
         font-weight: bold;
-        padding: 5px 0;
+        padding: 10px 0;
+        color: #00BFFF;
+        text-shadow: 1px 1px 2px black;
     }
     .sidebar-item-1 {
         color: #1E90FF;  /* Dodger Blue */
@@ -237,10 +239,6 @@ st.sidebar.markdown("""
     """, unsafe_allow_html=True)
 
 st.title("주요 목차")
-
-# 추가적인 콘텐츠가 여기로 들어갈 수 있습니다.
-
-
 
 
 
