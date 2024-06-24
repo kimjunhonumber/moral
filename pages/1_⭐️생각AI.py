@@ -16,7 +16,7 @@ assistant_id = "asst_OCLRBXXLG5aioaFLvZI4wGeu"
 st.set_page_config(page_title="생각AI", page_icon="🧠")
 
 st.markdown("""
-    <h1 style='text-align: center; color: #6699FF;'>🧠생각AI</h1>
+    <h1 style='text-align: center; color: #0000FF;'>🧠생각AI</h1>
 """, unsafe_allow_html=True)
 
 st.markdown("""
