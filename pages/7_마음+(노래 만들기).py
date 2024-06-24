@@ -30,14 +30,14 @@ client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 st.set_page_config(layout="wide")
 
-st.title("마음+ 마음 노래 만들기")
+st.title("마음+ 노래 만들기")
 
 # 사용자로부터 필요한 정보를 입력받습니다.
-st.header("1.연상하기 ")
-problem = st.text_area("덕목과 관련된어 연상되는 낱말을 적어보세요. 예시) 친구, 웃음, 노래")
+st.header("1.[예, 효, 정직, 책임, 존중, 배려, 소통, 협동] 생각 나는 낱말은? ")
+problem = st.text_area("예시) 인사, 기분, 행복 등")
 
 st.header("2. 가사 만들어 보기")
-ideal = st.text_area(" 떠오르는 낱말로 덕목과 관련 노래 가사를 지어 보세요. 예시) 친구를 보면 웃음이 나와.")
+ideal = st.text_area("예시) 인사를 하면 기분이 좋아.")
 
 st.divider()
 
