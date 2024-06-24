@@ -61,14 +61,14 @@ with col1:
 
     img_html = image_to_html('images/생각이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81AI')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;font-size: 18px;"><strong>생각AI에게    <br>물어 보세요!</strong></p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;font-size: 20px;"><strong>생각AI에게    <br>물어 보세요!</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col2:
     # st.markdown('<div style="background-color:#87CEEB; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     # st.markdown('<h3 style="text-align:center;">생각+</h3>', unsafe_allow_html=True)
     html_code = """
-    <div style="background-color:#87CEEB; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
-        <h3 style="margin: 0;font-size: 18px;">생각+</h3>
+    <div style="background-color:#87CEEB; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
+        <h3 style="margin: 0;font-size: 20px;">생각+</h3>
     </div>
     """
     # HTML 코드를 Streamlit에 표시
@@ -76,14 +76,14 @@ with col2:
 
     img_html = image_to_html('images/상황생각하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81+(%EC%83%9D%EA%B0%81%EC%9D%98_%ED%9E%98)')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;font-size: 18px;"><strong> 생각 키우기</strong></p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;font-size: 20px;"><strong> 생각 키우기</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col3:
     # st.markdown('<div style="background-color:#87CEEB; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     # st.markdown('<h3 style="text-align:center;">생각+</h3>', unsafe_allow_html=True)
     # 파란색 막대 안에 글을 넣는 HTML 코드
     html_code = """
-    <div style="background-color:#87CEEB; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
+    <div style="background-color:#87CEEB; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
         <h3 style="margin: 0; font-size: 18px;">생각+</h3>
     </div>
     """
