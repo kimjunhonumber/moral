@@ -76,7 +76,7 @@ with col2:
 
     img_html = image_to_html('images/상황생각하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81+(%EC%83%9D%EA%B0%81%EC%9D%98_%ED%9E%98)')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;"> 아는 힘, 생각하는 힘,    <br> 마음의 힘, 행동의 힘</p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;"><strong> 생각 키우기</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col3:
     # st.markdown('<div style="background-color:#87CEEB; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
@@ -93,7 +93,7 @@ with col3:
     
     img_html = image_to_html('images/이미지생성.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81+(%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%83%9D%EC%84%B1)')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">이야기에 어울리는  <br> 이미지 만들기 </span> </p>', unsafe_allow_html=True) 
+    st.markdown('<p style="text-align:center;"><strong>이미지 생성</strong> </span> </p>', unsafe_allow_html=True) 
     st.markdown('</div>', unsafe_allow_html=True)
 # 2행
 col4, col5, col6, col7 = st.columns([1, 1, 1, 1])
