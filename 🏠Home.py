@@ -102,7 +102,7 @@ with col4:
     st.markdown('<h3 style="text-align:center;">마음AI</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/마음이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8CAI')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">나라면 어떻게?, 공감하는 방법, 고민해결 하기</p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;"><strong>마음AI에게 <br> 물어보세요!</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col5:
     st.markdown('<div style="background-color:#FA8072   ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
