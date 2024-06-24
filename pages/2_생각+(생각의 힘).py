@@ -77,7 +77,7 @@ def generate_moral_document(problem, ideal, solution, government_action, penalti
     return response.choices[0].message.content
 
 # 법률안 생성 버튼
-if st.button("도덕적 행동 평가서"):
+if st.button("인성적 행동 평가서"):
     moral_document = generate_moral_document(problem, ideal, solution, government_action, penalties)
     st.subheader("도덕적 행동 평가")
     st.write(moral_document)
@@ -87,7 +87,7 @@ if st.button("도덕적 행동 평가서"):
     
     # 다운로드 링크 제공
     st.download_button(
-        label="나의 도덕행동 평가서",
+        label="인성적 행동 평가서",
         data=txt_file,
         file_name="generated_moral_document.txt",
         mime="text/plain"
