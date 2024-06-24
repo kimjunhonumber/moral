@@ -76,7 +76,7 @@ if st.button("마음 문장 만들기"):
     
     # 다운로드 링크 제공
     st.download_button(
-        label="나의 도덕행동 평가서",
+        label="다운로드",
         data=txt_file,
         file_name="generated_law_document.txt",
         mime="text/plain"
