@@ -33,20 +33,20 @@ st.set_page_config(layout="wide")
 st.title("생각+ 생각키우기")
 
 # 사용자로부터 필요한 정보를 입력받습니다.
-st.header("1.내가 겪었던 일 ")
-problem = st.text_area("행동과 관련된 내가 겪었던 일을 입력하세요. 예시) 부모님의 심부름을 했다.")
+st.header("1.내가 겪었던 일: 내가 한 행동은? ")
+problem = st.text_area("예시) 부모님의 심부름을 했다.")
 
-st.header("2. 아는 힘")
-ideal = st.text_area("겪은 상황을 통해서 도덕적으로 알게 된 것은? 예시) 부모님 말씀을 잘듣는 것은 바른 행동이다.")
+st.header("2. 아는 힘: 내가 한 행동을 통해 알게 된 것은?")
+ideal = st.text_area("예시) 부모님 말씀을 잘듣는 것은 바른 행동이다.")
 
-st.header("3. 생각하는 힘")
-solution = st.text_area("겪은 상황을 통해서 한 나의 판단은? 예시) 부모님의 심부름을 해드리면 내 마음이 뿌듯하다고 판단된다.")
+st.header("3. 생각하는 힘: 내가 한 행동에 대한 판단은?")
+solution = st.text_area(" 예시) 부모님의 심부름을 해드리면 내 마음이 뿌듯하다고 판단된다.")
 
-st.header("4. 마음의 힘")
-government_action = st.text_area("겪은 상황에서 자신을 돌아 보면서 나의 마음 표현하기? 예시) 부모님을 돕는 것은 기쁜 일이다.")
+st.header("4. 마음의 힘: 내가 한 행동에 대한 느낌은?")
+government_action = st.text_area("예시) 부모님을 돕는 것은 기쁜 일이다.")
 
-st.header("5. 행동의 힘")
-penalties = st.text_area("상황에서 내가 할 수 있는 도덕적 행동은? 예시) 부모님을 항상 도와드릴 것이다.")
+st.header("5. 행동의 힘: 나의 다짐은?")
+penalties = st.text_area("예시) 부모님을 항상 도와드릴 것이다.")
 
 st.divider()
 
