@@ -1,14 +1,10 @@
-from openai import OpenAI
+import openai
 import streamlit as st
-import time
-import random
-from io import BytesIO  # 파일 다운로드를 위해 필요
+from io import BytesIO
 import os
 
-
 # API 키 설정
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # 페이지 제목 설정
 st.set_page_config(page_title="나의 인성 테스트")
@@ -43,10 +39,6 @@ for i, question in enumerate(questions, 1):
     responses.append(int(response[0]))
 
 # 상황 질문
-
-
-
-# 설문 문항
 st.markdown("## ■ 다음은 갈등 상황 판단 테스트 입니다.")
 st.markdown("## <1>")
 situation1 = st.radio(
@@ -120,5 +112,14 @@ if st.button("결과 보기"):
     # 분석 결과 출력
     st.markdown("## 도덕성 테스트 결과")
     st.write(analysis)
-
-
+    
+    # 생성된 도덕적 행동 평가서를 TXT 파일로 변환
+    txt_file = BytesIO(analysis.encode('utf-8'))
+    
+    # 다운로드 링크 제공
+    st.download_button(
+        label="인성적 행동 평가서 다운로드",
+        data=txt_file,
+        file_name="generated_moral_document.txt",
+        mime="text/plain"
+    )
