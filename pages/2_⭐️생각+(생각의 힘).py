@@ -32,7 +32,7 @@ st.set_page_config(layout="wide")
 
 # st.title("생각+ 생각키우기")
 st.markdown("""
-    <h1 style='text-align: center; color: #000DCC;'>생각+생각키우기</h1>
+    <h1 style='text-align: center; color: ##3333FF;'>생각+생각키우기</h1>
 """, unsafe_allow_html=True)
 
 # 사용자로부터 필요한 정보를 입력받습니다.
