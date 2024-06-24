@@ -116,7 +116,7 @@ with col6:
     st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
     img_html = image_to_html('images/마음문장만들기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EC%A7%A7%EC%9D%80%EB%AC%B8%EC%9E%A5)')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;font-szie:20px;">마음 문장 만들기 <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;font-szie:20px;"><strong>마음 문장 만들기</strong> <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col7:
     st.markdown('<div style="background-color:#FA8072  ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
