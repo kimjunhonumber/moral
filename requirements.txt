@@ -5,5 +5,5 @@ Pillow
 openpyxl
 pandas
 matplotlib
-
+seaborn
 
