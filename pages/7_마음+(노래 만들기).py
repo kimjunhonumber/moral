@@ -71,7 +71,7 @@ if st.button("가사 추천"):
     
     # 다운로드 링크 제공
     st.download_button(
-        label="나의 행동 평가서",
+        label="다운로드",
         data=txt_file,
         file_name="generated_law_document.txt",
         mime="text/plain"
