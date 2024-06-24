@@ -36,7 +36,7 @@ st.title("생각+ 이미지 생성하기")
 presentation_text = st.text_area("고민 상황, 가치덕목과 관련된 이야기 내용을 적어보세요.", height=300)
 
 # 이미지 스타일 선택
-image_style = st.selectbox("이미지 스타일 선택", ["사진스타일", "수채화", "미니얼 일러스트레이션","웹툰, 손그림"])
+image_style = st.selectbox("이미지 스타일 선택", ["사진스타일", "수채화", "미니얼 일러스트레이션","웹툰", "손그림"])
 
 # 이미지 생성 버튼
 generate_button = st.button("이미지 생성")
