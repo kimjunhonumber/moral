@@ -61,7 +61,7 @@ with col1:
 
     img_html = image_to_html('images/생각이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81AI')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;"><strong>생각AI에게    <br>물어 보세요!</strong></p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;font-size: 18px;"><strong>생각AI에게    <br>물어 보세요!</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col2:
     # st.markdown('<div style="background-color:#87CEEB; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
@@ -76,7 +76,7 @@ with col2:
 
     img_html = image_to_html('images/상황생각하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81+(%EC%83%9D%EA%B0%81%EC%9D%98_%ED%9E%98)')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;"><strong> 생각 키우기</strong></p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;font-size: 18px;"><strong> 생각 키우기</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col3:
     # st.markdown('<div style="background-color:#87CEEB; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
