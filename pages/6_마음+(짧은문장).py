@@ -4,6 +4,7 @@ import time
 import random
 from io import BytesIO  # 파일 다운로드를 위해 필요
 import os
+from PIL import Image
 
 # # secrets.toml에 저장된 API 키들을 리스트로 준비
 # api_keys = [
@@ -31,6 +32,14 @@ client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 st.set_page_config(layout="wide")
 
 st.title("생각+ 생각키우기")
+
+# 이미지 파일 경로
+image_path = 'images/마음문장.png'  # 여기에 이미지 파일 경로를 입력하세요
+
+# 이미지 로드 및 표시
+image = Image.open(image_path)
+st.image(image, caption='생각+ 이미지', use_column_width=True)
+
 
 # 사용자로부터 필요한 정보를 입력받습니다.
 st.header("마음 문장 만들기 ")
