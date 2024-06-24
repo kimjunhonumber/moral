@@ -201,56 +201,5 @@ with col10:
 
 
 
-st.sidebar.markdown("""
-    <style>
-    .sidebar-text {
-        font-size: 16px;
-        font-weight: bold;
-        padding: 5px 0;
-    }
-    .sidebar-item-1 {
-        color: #1E90FF;  /* Dodger Blue */
-    }
-    .sidebar-item-2 {
-        color: #32CD32;  /* Lime Green */
-    }
-    .sidebar-item-3 {
-        color: #FF6347;  /* Tomato */
-    }
-    .sidebar-item-4 {
-        color: #FFD700;  /* Gold */
-    }
-    .sidebar-item-5 {
-        color: #8A2BE2;  /* Blue Violet */
-    }
-    </style>
-    <div class="sidebar-text sidebar-item-1">1_생각AI</div>
-    <div class="sidebar-text sidebar-item-2">2_생각+(생각의 힘)</div>
-    <div class="sidebar-text sidebar-item-2">3_생각+(이미지 생성)</div>
-    <div class="sidebar-text sidebar-item-3">4_마음AI</div>
-    <div class="sidebar-text sidebar-item-3">5_마음+(배우고 싶은점)</div>
-    <div class="sidebar-text sidebar-item-3">6_마음+(짧은문장)</div>
-    <div class="sidebar-text sidebar-item-3">7_마음+(노래 만들기)</div>
-    <div class="sidebar-text sidebar-item-4">8_실천AI</div>
-    <div class="sidebar-text sidebar-item-4">9_실천+(계획세우기)</div>
-    <div class="sidebar-text sidebar-item-4">10_실천+(놀이터)</div>
-    """, unsafe_allow_html=True)
-
-st.title("주요 목차")
-
-st.markdown("""
-    <div>
-        <p style="color: #1E90FF; font-size: 16px;"><strong>1_생각AI</strong></p>
-        <p style="color: #32CD32; font-size: 16px;"><strong>2_생각+(생각의 힘)</strong></p>
-        <p style="color: #32CD32; font-size: 16px;"><strong>3_생각+(이미지 생성)</strong></p>
-        <p style="color: #FF6347; font-size: 16px;"><strong>4_마음AI</strong></p>
-        <p style="color: #FF6347; font-size: 16px;"><strong>5_마음+(배우고 싶은점)</strong></p>
-        <p style="color: #FF6347; font-size: 16px;"><strong>6_마음+(짧은문장)</strong></p>
-        <p style="color: #FF6347; font-size: 16px;"><strong>7_마음+(노래 만들기)</strong></p>
-        <p style="color: #FFD700; font-size: 16px;"><strong>8_실천AI</strong></p>
-        <p style="color: #FFD700; font-size: 16px;"><strong>9_실천+(계획세우기)</strong></p>
-        <p style="color: #FFD700; font-size: 16px;"><strong>10_실천+(놀이터)</strong></p>
-    </div>
-    """, unsafe_allow_html=True)
 
 
