@@ -3,6 +3,8 @@ import streamlit as st
 import time
 import random
 import os
+from PIL import Image
+
 
 # API 키 설정
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
@@ -14,6 +16,13 @@ assistant_id = "asst_OCLRBXXLG5aioaFLvZI4wGeu"
 # 페이지 설정
 st.set_page_config(page_title="생각AI", page_icon="🧠")
 st.title("🧠생각AI")
+image_path = 'images/생각AI.png'  # 여기에 이미지 파일 경로를 입력하세요
+
+# 이미지 로드 및 표시
+image = Image.open(image_path)
+st.image(image, caption='생각+ 이미지', use_column_width=False, width=300)
+
+
 
 
 st.markdown("""
