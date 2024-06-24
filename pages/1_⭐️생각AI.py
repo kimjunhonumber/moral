@@ -19,14 +19,6 @@ st.markdown("""
     <h1 style='text-align: center; color: #6699FF;'>🧠생각AI</h1>
 """, unsafe_allow_html=True)
 
-
-# 이미지 로드 및 표시
-image = Image.open(image_path)
-st.image(image, caption='생각+ 이미지', use_column_width=False, width=300)
-
-
-
-
 st.markdown("""
     <style>
     .stApp {
