@@ -65,8 +65,8 @@ with st.sidebar:
         thread = client.beta.threads.create()
         st.session_state.thread_id = thread.id
         st.subheader(f"Created Thread ID: {st.session_state.thread_id}")
-        st.info("스레드가 생성되었습니다.")
-        st.info("스레드 ID를 기억하면 대화내용을 이어갈 수 있습니다.")
+        st.info("ID 생성되었습니다.")
+        st.info("ID를 기억하면 대화내용을 이어갈 수 있습니다.")
         st.divider()
         st.subheader("추천 질문")
         st.info("생활속에서 덕목을 실천할 수 있는 방법은? 무엇이 있습니까?")
