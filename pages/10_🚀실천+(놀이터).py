@@ -32,12 +32,12 @@ st.markdown("## ■ 인성 테스트를 위한 설문입니다. 내가 생각하
 #     "친구들이 나에게 관심을 두게 하려면 내 의견을 분명히 이야기해야 한다."
 # ]
 
-choices = ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"]
-responses = []
+# choices = ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"]
+# responses = []
 
-for i, question in enumerate(questions, 1):
-    response = st.radio(f"{i}. {question}", choices, key=f"q{i}")
-    responses.append(int(response[0]))
+# for i, question in enumerate(questions, 1):
+#     response = st.radio(f"{i}. {question}", choices, key=f"q{i}")
+#     responses.append(int(response[0]))
 
 # 상황 질문
 st.markdown("## <상황1>")
