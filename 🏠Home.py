@@ -52,7 +52,7 @@ with col1:
     # 파란색 막대 안에 글을 넣는 HTML 코드
     html_code = """
     <div style="background-color:#4169E1; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
-        <h3 style="margin: 0; font-size: 18px;">생각AI</h3>
+        <h3 style="margin: 0; font-size: 20px;">생각AI</h3>
     </div>
     """
     # HTML 코드를 Streamlit에 표시
