@@ -61,7 +61,7 @@ with col1:
 
     img_html = image_to_html('images/생각이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81AI')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;">생각AI에게    <br>물어 보세요!</p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;"><strong>생각AI에게    <br>물어 보세요!</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col2:
     # st.markdown('<div style="background-color:#87CEEB; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
