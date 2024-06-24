@@ -38,7 +38,7 @@ image_path = 'images/마음문장.png'  # 여기에 이미지 파일 경로를 �
 
 # 이미지 로드 및 표시
 image = Image.open(image_path)
-st.image(image, caption='생각+ 이미지', use_column_width=False, width=300)
+st.image(image, caption='마음 문장 만들기', use_column_width=False, width=300)
 
 
 # 사용자로부터 필요한 정보를 입력받습니다.
