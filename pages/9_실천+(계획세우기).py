@@ -12,17 +12,17 @@ st.title("인성 행동 실천 기록")
 st.markdown("## 내가 실천한 오늘의 바른 인성 행동을 기록하세요.")
 
 # 사용자 이름 입력
-name = st.text_input("이름을 적으세요")
+name = st.text_input("이름")
 
 # 데이터 입력
 date = st.date_input("날짜")
 
 # 덕목 드롭다운
 virtues = ["예", "효", "정직", "책임", "존중", "배려", "소통", "협동"]
-virtue = st.selectbox("덕목", virtues)
+virtue = st.selectbox("가치덕목", virtues)
 
-action = st.text_area("한 일")
-thought = st.text_area("느낀 점")
+action = st.text_area("실천한 일")
+thought = st.text_area("실천하며 느낀 점")
 
 # 입력 데이터를 저장할 데이터프레임 초기화
 if 'data' not in st.session_state:
