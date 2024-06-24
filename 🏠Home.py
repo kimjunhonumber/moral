@@ -98,29 +98,57 @@ with col3:
 # 2행
 col4, col5, col6, col7 = st.columns([1, 1, 1, 1])
 with col4:
-    st.markdown('<div style="background-color:#DC143C ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">마음AI</h3>', unsafe_allow_html=True)
+    # st.markdown('<div style="background-color:#DC143C ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    # st.markdown('<h3 style="text-align:center;">마음AI</h3>', unsafe_allow_html=True)
+    # 파란색 막대 안에 글을 넣는 HTML 코드
+    html_code = """
+    <div style="background-color:#DC143C; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
+        <h3 style="margin: 0; font-size: 20px;">마음AI</h3>
+    </div>
+    """
+    st.markdown(html_code, unsafe_allow_html=True)
+
     img_html = image_to_html('images/마음이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8CAI')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;font-szie:20px"><strong>마음AI에게 <br> 물어보세요!</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col5:
-    st.markdown('<div style="background-color:#FA8072   ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
+    # st.markdown('<div style="background-color:#FA8072   ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    # st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
+        # 파란색 막대 안에 글을 넣는 HTML 코드
+    html_code = """
+    <div style="background-color:#FA8072; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
+        <h3 style="margin: 0; font-size: 20px;">마음+</h3>
+    </div>
+    """
+    st.markdown(html_code, unsafe_allow_html=True)
+
     img_html = image_to_html('images/반성하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%B0%B0%EC%9A%B0%EA%B3%A0_%EC%8B%B6%EC%9D%80%EC%A0%90)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong> 마음 본받기</strong></p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
 with col6:
-    st.markdown('<div style="background-color:#FA8072  ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
+    # st.markdown('<div style="background-color:#FA8072  ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    # st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
+    html_code = """
+    <div style="background-color:#FA8072; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
+        <h3 style="margin: 0; font-size: 20px;">마음+</h3>
+    </div>
+    """
+    st.markdown(html_code, unsafe_allow_html=True)
     img_html = image_to_html('images/마음문장만들기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EC%A7%A7%EC%9D%80%EB%AC%B8%EC%9E%A5)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;font-szie:20px;"><strong>마음 문장 만들기</strong> <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col7:
-    st.markdown('<div style="background-color:#FA8072  ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
+    # st.markdown('<div style="background-color:#FA8072  ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    # st.markdown('<h3 style="text-align:center;">마음+</h3>', unsafe_allow_html=True)
+    html_code = """
+    <div style="background-color:#FA8072; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
+        <h3 style="margin: 0; font-size: 20px;">마음+</h3>
+    </div>
+    """
+    st.markdown(html_code, unsafe_allow_html=True)
     img_html = image_to_html('images/가사추천하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%85%B8%EB%9E%98_%EB%A7%8C%EB%93%A4%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong>노래 만들기 </strong>   <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
@@ -128,23 +156,41 @@ with col7:
 # 3행
 col8, col9, col10 = st.columns([1, 1, 1])
 with col8:
-    st.markdown('<div style="background-color:#32CD32 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">실천AI</h3>', unsafe_allow_html=True)
+    # st.markdown('<div style="background-color:#32CD32 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    # st.markdown('<h3 style="text-align:center;">실천AI</h3>', unsafe_allow_html=True)
+    html_code = """
+    <div style="background-color:#32CD32; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
+        <h3 style="margin: 0; font-size: 20px;">실천AI</h3>
+    </div>
+    """
+    st.markdown(html_code, unsafe_allow_html=True)
     img_html = image_to_html('images/실천이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong>실천AI에게<br>물어보세요!</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 with col9:
-    st.markdown('<div style="background-color:#90EE90 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
+    # st.markdown('<div style="background-color:#90EE90 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    # st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
+    html_code = """
+    <div style="background-color:#90EE90; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
+        <h3 style="margin: 0; font-size: 20px;">실천+</h3>
+    </div>
+    """
+    st.markdown(html_code, unsafe_allow_html=True)
     img_html = image_to_html('images/실천계획세우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9C+(%EA%B3%84%ED%9A%8D%EC%84%B8%EC%9A%B0%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong>인성 실천 행동기록</strong> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
 with col10:
-    st.markdown('<div style="background-color:#90EE90 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
+    # st.markdown('<div style="background-color:#90EE90 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    # st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
+    html_code = """
+    <div style="background-color:#90EE90; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
+        <h3 style="margin: 0; font-size: 20px;">실천+</h3>
+    </div>
+    """
+    st.markdown(html_code, unsafe_allow_html=True)    
     img_html = image_to_html('images/실천의지키우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;"><strong>실천 놀이터</strong></p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
+    st.markdown('<p style="text-align:center;"><strong>인성 테스트</strong></p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
