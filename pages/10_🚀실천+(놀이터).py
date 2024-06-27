@@ -150,7 +150,7 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
             max_tokens=1000,
             temperature=0.7
         )
-        return response.choices[0].message.content
+    return response.choices[0].message.content
         
 # 결과 분석 및 피드백
 if st.button("결과 보기"):
