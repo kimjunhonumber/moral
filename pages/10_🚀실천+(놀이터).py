@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import openai
 from datetime import datetime
 import os
@@ -19,25 +18,25 @@ name = st.text_input("■ 이름을 적으세요", "")
 # 설문 문항
 st.markdown("## ■ 인성 테스트를 위한 설문입니다. 내가 생각하는 정도를 체크해 보세요")
 
-# questions = [
-#     "모둠 활동을 할 때에는 나의 역할에만 신경 쓰는 것이 좋다.",
-#     "내가 불편하지 않다면 다른 친구들이 하고 싶은 대로 하는 것이 마음이 편하다.",
-#     "나는 내가 옳다고 생각하면 내 입장을 강하게 주장한다.",
-#     "다른 사람과 무언가를 함께 할 때는 갈등이 생길 수밖에 없다.",
-#     "나는 다른 친구들의 의견을 들을 때, 새로운 것을 더 배운다.",
-#     "새롭게 해결책을 찾기보다는 내가 해야 할 일에 집중하는 것이 더 낫다.",
-#     "아무도 내 의견에는 흥미가 없다.",
-#     "내가 잘 모를 때에는 잘 아는 친구의 의견을 듣는 것이 좋다.",
-#     "내 의견을 주장하는 것보다 친구들과 사이좋게 잘 지내는 것이 더 중요하다.",
-#     "친구들이 나에게 관심을 두게 하려면 내 의견을 분명히 이야기해야 한다."
-# ]
+questions = [
+    "모둠 활동을 할 때에는 나의 역할에만 신경 쓰는 것이 좋다.",
+    "내가 불편하지 않다면 다른 친구들이 하고 싶은 대로 하는 것이 마음이 편하다.",
+    "나는 내가 옳다고 생각하면 내 입장을 강하게 주장한다.",
+    "다른 사람과 무언가를 함께 할 때는 갈등이 생길 수밖에 없다.",
+    "나는 다른 친구들의 의견을 들을 때, 새로운 것을 더 배운다.",
+    "새롭게 해결책을 찾기보다는 내가 해야 할 일에 집중하는 것이 더 낫다.",
+    "아무도 내 의견에는 흥미가 없다.",
+    "내가 잘 모를 때에는 잘 아는 친구의 의견을 듣는 것이 좋다.",
+    "내 의견을 주장하는 것보다 친구들과 사이좋게 잘 지내는 것이 더 중요하다.",
+    "친구들이 나에게 관심을 두게 하려면 내 의견을 분명히 이야기해야 한다."
+]
 
-# choices = ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"]
-# responses = []
+choices = ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"]
+responses = []
 
-# for i, question in enumerate(questions, 1):
-#     response = st.radio(f"{i}. {question}", choices, key=f"q{i}")
-#     responses.append(int(response[0]))
+for i, question in enumerate(questions, 1):
+    response = st.radio(f"{i}. {question}", choices, key=f"q{i}")
+    responses.append(response)
 
 # 상황 질문
 st.markdown("## <상황1>")
@@ -69,15 +68,14 @@ st.markdown("## ■ 인성 실천 행동을 한 나의 생각과 느낌을 적�
 thoughts = st.text_area("", "")
 
 @st.cache_data
-def analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts, total_score):
+def analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts):
     data = {
         "이름": name,
-        # "응답": responses,
+        "응답": responses,
         "상황1": situation1,
         "상황2": situation2,
         "상황3": situation3,
-        "생각과 느낌": thoughts,
-        "총점": total_score
+        "생각과 느낌": thoughts
     }
 
     persona = f'''
@@ -90,7 +88,6 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
     상황2: {situation2}
     상황3: {situation3}
     생각과 느낌: {thoughts}
-    총점: {total_score}
     '''
 
     response = openai.ChatCompletion.create(
@@ -106,10 +103,8 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
 
 # 결과 분석 및 피드백
 if st.button("결과 보기"):
-    total_score = sum(responses)
-    analysis = analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts, total_score)
+    analysis = analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts)
 
     # 분석 결과 출력
     st.markdown("## 도덕성 테스트 결과")
     st.write(analysis)
-
