@@ -141,16 +141,25 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
     '''
 
     try:
-       response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
                 {"role": "system", "content": persona},
                 {"role": "user", "content": "도덕성 테스트 데이터에 대한 분석과 피드백을 제공해 주세요."}
             ],
-            max_tokens=1000,
-            temperature=0.7
-        )
-        return response.choices[0]['message']['content'].strip()
+        max_tokens=1000,
+        temperature=0.7
+    )
+    return response.choices[0]['message']['content'].strip()
+
+# # 결과 분석 및 피드백
+# if st.button("결과 보기"):
+#     analysis = analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts)
+
+#     # 분석 결과 출력
+#     st.markdown("## 도덕성 테스트 결과")
+#     st.write(analysis)
+
 
 # 결과 분석 및 피드백
 if st.button("결과 보기"):
