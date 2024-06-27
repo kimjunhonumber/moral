@@ -78,21 +78,6 @@ question10 = "10_ 친구들이 나에게 관심을 두게 하려면 내 의견�
 response10 = st.radio(f"10. {question10}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response10_value = int(response10[0]) if response10 else 0
 
-@@ -140,42 +142,138 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
-    총점: {total_score}
-    '''
-
-# try:
-#     response = client.chat.completions.create(
-#         model="gpt-3.5-turbo",
-#         messages=[
-#                 {"role": "system", "content": persona},
-#                 {"role": "user", "content": "도덕성 테스트 데이터에 대한 분석과 피드백을 제공해 주세요."}
-#             ],
-#         max_tokens=1000,
-#         temperature=0.7
-#     )
-#     return response.choices[0]['message']['content'].strip()
     try:
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
