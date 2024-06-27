@@ -151,10 +151,7 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
             temperature=0.7
         )
         return response.choices[0].message.content
-    except Exception as e:
-        st.error(f"API 요청 중 오류가 발생했습니다: {e}")
-        return None
-
+        
 # 결과 분석 및 피드백
 if st.button("결과 보기"):
     total_score = sum([response['value'] for response in responses])
