@@ -153,13 +153,13 @@ try:
     return response.choices[0]['message']['content'].strip()
     
 # 결과 분석 및 피드백
-if st.button("결과 보기"):
-    analysis = analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts)
-
-    # 분석 결과 출력
-    st.markdown("## 도덕성 테스트 결과")
-    st.write(analysis)
-
+    if st.button("결과 보기"):
+        analysis = analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts)
+    
+        # 분석 결과 출력
+        st.markdown("## 도덕성 테스트 결과")
+        st.write(analysis)
+    
 
 # # 결과 분석 및 피드백
 # if st.button("결과 보기"):
