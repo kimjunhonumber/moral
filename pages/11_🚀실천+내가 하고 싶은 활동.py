@@ -22,52 +22,52 @@ name = st.text_input("■ 이름을 적으세요", "")
 st.markdown("## ■ 인성 테스트를 위한 설문입니다. 내가 생각하는 정도를 체크해 보세요")
 
 # 질문 1
-question1 = "모둠 활동을 할 때에는 나의 역할에만 신경 쓰는 것이 좋다."
+question1 = "1. 모둠 활동을 할 때에는 나의 역할에만 신경 쓰는 것이 좋다."
 response1 = st.radio(f"1. {question1}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response1_value = int(response1[0]) if response1 else 0
 
 # 질문 2
-question2 = "내가 불편하지 않다면 다른 친구들이 하고 싶은 대로 하는 것이 마음이 편하다."
+question2 = "2. 내가 불편하지 않다면 다른 친구들이 하고 싶은 대로 하는 것이 마음이 편하다."
 response2 = st.radio(f"2. {question2}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response2_value = int(response2[0]) if response2 else 0
 
 # 질문 3
-question3 = "나는 내가 옳다고 생각하면 내 입장을 강하게 주장한다."
+question3 = "3. 나는 내가 옳다고 생각하면 내 입장을 강하게 주장한다."
 response3 = st.radio(f"3. {question3}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response3_value = int(response3[0]) if response3 else 0
 
 # 질문 4
-question4 = "다른 사람과 무언가를 함께 할 때는 갈등이 생길 수밖에 없다."
+question4 = "4. 다른 사람과 무언가를 함께 할 때는 갈등이 생길 수밖에 없다."
 response4 = st.radio(f"4. {question4}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response4_value = int(response4[0]) if response4 else 0
 
 # 질문 5
-question5 = "나는 다른 친구들의 의견을 들을 때, 새로운 것을 더 배운다."
+question5 = "5. 나는 다른 친구들의 의견을 들을 때, 새로운 것을 더 배운다."
 response5 = st.radio(f"5. {question5}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response5_value = int(response5[0]) if response5 else 0
 
 # 질문 6
-question6 = "새롭게 해결책을 찾기보다는 내가 해야 할 일에 집중하는 것이 더 낫다."
+question6 = "6. 새롭게 해결책을 찾기보다는 내가 해야 할 일에 집중하는 것이 더 낫다."
 response6 = st.radio(f"6. {question6}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response6_value = int(response6[0]) if response6 else 0
 
 # 질문 7
-question7 = "아무도 내 의견에는 흥미가 없다."
+question7 = "7. 아무도 내 의견에는 흥미가 없다."
 response7 = st.radio(f"7. {question7}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response7_value = int(response7[0]) if response7 else 0
 
 # 질문 8
-question8 = "내가 잘 모를 때에는 잘 아는 친구의 의견을 듣는 것이 좋다."
+question8 = "8. 내가 잘 모를 때에는 잘 아는 친구의 의견을 듣는 것이 좋다."
 response8 = st.radio(f"8. {question8}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response8_value = int(response8[0]) if response8 else 0
 
 # 질문 9
-question9 = "내 의견을 주장하는 것보다 친구들과 사이좋게 잘 지내는 것이 더 중요하다."
+question9 = "9. 내 의견을 주장하는 것보다 친구들과 사이좋게 잘 지내는 것이 더 중요하다."
 response9 = st.radio(f"9. {question9}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response9_value = int(response9[0]) if response9 else 0
 
 # 질문 10
-question10 = "친구들이 나에게 관심을 두게 하려면 내 의견을 분명히 이야기해야 한다."
+question10 = "10. 친구들이 나에게 관심을 두게 하려면 내 의견을 분명히 이야기해야 한다."
 response10 = st.radio(f"10. {question10}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response10_value = int(response10[0]) if response10 else 0
 
