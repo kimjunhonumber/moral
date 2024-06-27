@@ -26,12 +26,6 @@ question1 = "1. 모둠 활동을 할 때에는 나의 역할에만 신경 쓰는
 response1 = st.radio(f"1.question1, ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response1_value = int(response1[0]) if response1 else 0
 
-
-# # 질문 1
-# question1 = "1. 모둠 활동을 할 때에는 나의 역할에만 신경 쓰는 것이 좋다."
-# response1 = st.radio(f"1. {question1}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
-# response1_value = int(response1[0]) if response1 else 0
-
 # 질문 2
 question2 = "2. 내가 불편하지 않다면 다른 친구들이 하고 싶은 대로 하는 것이 마음이 편하다."
 response2 = st.radio(f"2. {question2}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
