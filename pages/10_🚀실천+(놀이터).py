@@ -160,24 +160,3 @@ try:
         st.markdown("## 도덕성 테스트 결과")
         st.write(analysis)
     
-
-# # 결과 분석 및 피드백
-# if st.button("결과 보기"):
-#     total_score = sum([response['value'] for response in responses])
-#     analysis = analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts, total_score)
-
-#     if analysis:
-#         # 분석 결과 출력
-#         st.markdown("## 도덕성 테스트 결과")
-#         st.write(analysis)
-        
-#         # 생성된 도덕적 행동 평가서를 TXT 파일로 변환
-#         txt_file = BytesIO(analysis.encode('utf-8'))
-        
-#         # 다운로드 링크 제공
-#         st.download_button(
-#             label="인성적 행동 평가서 다운로드",
-#             data=txt_file,
-#             file_name="generated_moral_document.txt",
-#             mime="text/plain"
-#         )
