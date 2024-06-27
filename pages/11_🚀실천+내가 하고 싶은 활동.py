@@ -23,7 +23,7 @@ st.markdown("## ■ 인성 테스트를 위한 설문입니다. 내가 생각하
 
 # 질문 1
 question1 = "1. 모둠 활동을 할 때에는 나의 역할에만 신경 쓰는 것이 좋다."
-response1 = st.radio(f"1.question1, ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
+response1 = st.radio(f"1. {question1} , ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response1_value = int(response1[0]) if response1 else 0
 
 # 질문 2
