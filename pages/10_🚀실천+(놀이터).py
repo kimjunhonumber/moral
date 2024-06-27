@@ -150,7 +150,7 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
             max_tokens=1000,
             temperature=0.7
         )
-        return response.choices[0].message['content'].strip()
+        return response.choices[0].message.content
     except Exception as e:
         st.error(f"API 요청 중 오류가 발생했습니다: {e}")
         return None
