@@ -1,10 +1,13 @@
+from openai import OpenAI
 import streamlit as st
-import openai
-from datetime import datetime
+import time
+import random
+from io import BytesIO  # 파일 다운로드를 위해 필요
 import os
 
-# OpenAI API 키 설정
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+# API 키 설정
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 # 페이지 제목 설정
 st.set_page_config(page_title="나의 인성 테스트")
@@ -90,7 +93,7 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
     '''
 
     try:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "도덕성 테스트 데이터를 분석하는 모델입니다."},
