@@ -154,7 +154,7 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
     try:
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
-            messages={"role": "system", "content": persona},
+            messages=[{"role": "system", "content": persona},
                 {"role": "user", "content": "도덕성 테스트 데이터에 대한 분석과 피드백을 제공해 주세요."}
              ],
             max_tokens=1000,
