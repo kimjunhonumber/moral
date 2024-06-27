@@ -140,34 +140,38 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
     총점: {total_score}
     '''
 
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": persona},
-            {"role": "user", "content": "도덕성 테스트 데이터에 대한 분석과 피드백을 제공해 주세요."}
-        ],
-        max_tokens=1000,
-        temperature=0.7
-    )
-    return response.choices[0].message['content'].strip()
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": persona},
+                {"role": "user", "content": "도덕성 테스트 데이터에 대한 분석과 피드백을 제공해 주세요."}
+            ],
+            max_tokens=1000,
+            temperature=0.7
+        )
+        return response.choices[0].message['content'].strip()
+    except Exception as e:
+        st.error(f"API 요청 중 오류가 발생했습니다: {e}")
+        return None
 
 # 결과 분석 및 피드백
 if st.button("결과 보기"):
     total_score = sum([response['value'] for response in responses])
     analysis = analyze_moral_data(name, responses, situation1, situation2, situation3, thoughts, total_score)
 
-    # 분석 결과 출력
-    st.markdown("## 도덕성 테스트 결과")
-    st.write(analysis)
-    
-    # 생성된 도덕적 행동 평가서를 TXT 파일로 변환
-    txt_file = BytesIO(analysis.encode('utf-8'))
-    
-    # 다운로드 링크 제공
-    st.download_button(
-        label="인성적 행동 평가서 다운로드",
-        data=txt_file,
-        file_name="generated_moral_document.txt",
-        mime="text/plain"
-    )
-
+    if analysis:
+        # 분석 결과 출력
+        st.markdown("## 도덕성 테스트 결과")
+        st.write(analysis)
+        
+        # 생성된 도덕적 행동 평가서를 TXT 파일로 변환
+        txt_file = BytesIO(analysis.encode('utf-8'))
+        
+        # 다운로드 링크 제공
+        st.download_button(
+            label="인성적 행동 평가서 다운로드",
+            data=txt_file,
+            file_name="generated_moral_document.txt",
+            mime="text/plain"
+        )
