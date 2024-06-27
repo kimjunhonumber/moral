@@ -93,7 +93,7 @@ def analyze_moral_data(name, responses, situation1, situation2, situation3, thou
     '''
 
     try:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "도덕성 테스트 데이터를 분석하는 모델입니다."},
