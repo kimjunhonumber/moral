@@ -46,7 +46,7 @@ with col2:
     st.markdown("""
         <div style="background-color: #f8f8f8; padding: 20px; margin-bottom: 10px; border-radius: 10px; height: 200px;">
             <h3 style="margin: 0;">예시 2) 인성 동요 만들기</h3>
-            <p>- 마음+ 노래 만들기 활용</p>
+              <p>- <a href="https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%85%B8%EB%9E%98_%EB%A7%8C%EB%93%A4%EA%B8%B0)" target="_blank">- 마음+ 노래 만들기 활용</p>
         </div>
     """, unsafe_allow_html=True)
 
@@ -54,7 +54,7 @@ with col3:
     st.markdown("""
         <div style="background-color: #f8f8f8; padding: 20px; margin-bottom: 10px; border-radius: 10px; height: 200px;">
             <h3 style="margin: 0;">예시 3) 인성 퀴즈 만들기</h3>
-            <p>- 실천AI 활용</p>
+              <p>- <a href="https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EC%8B%A4%EC%B2%9CAI" target="_blank">- 실천AI 활용</p>
         </div>
     """, unsafe_allow_html=True)
 
