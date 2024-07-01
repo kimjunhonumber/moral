@@ -77,7 +77,7 @@ with col2:
     # HTML 코드를 Streamlit에 표시
     st.markdown(html_code, unsafe_allow_html=True)
 
-    img_html = image_to_html('images/상황생각하기.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EF%B8%8F%EC%83%9D%EA%B0%81+(%EC%83%9D%EA%B0%81_%ED%82%A4%EC%9A%B0%EA%B8%B0')
+    img_html = image_to_html('images/상황생각하기.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EF%B8%8F%EC%83%9D%EA%B0%81+(%EC%83%9D%EA%B0%81_%ED%82%A4%EC%9A%B0%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;font-size: 20px;"><strong> 생각 키우기</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
