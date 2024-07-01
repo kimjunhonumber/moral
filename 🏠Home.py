@@ -186,15 +186,19 @@ with col9:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col10:
+    # st.markdown('<div style="background-color:#90EE90 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+    # st.markdown('<h3 style="text-align:center;">실천+</h3>', unsafe_allow_html=True)
     html_code = """
-    <div style="background-color:#FFD700; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%;">
+    <div style="background-color:#90EE90; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: inline-block;">
         <h3 style="margin: 0; font-size: 20px;">실천+</h3>
     </div>
     """
-    st.markdown(html_code, unsafe_allow_html=True)
-    img_html = image_to_html('images/내가하고싶은활동.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9C+(%EC%83%88%EB%A1%9C%EC%9A%B4%EC%9D%B4%EB%AF%B8%EC%A7%80)')
+    st.markdown(html_code, unsafe_allow_html=True)    
+    img_html = image_to_html('images/내가하고싶은활동.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
     st.markdown(img_html, unsafe_allow_html=True)
-    st.markdown('<p style="text-align:center;"><strong>내가 하고 싶은 활동</strong></p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;"><strong>내가 하고 싶은 활동</strong></p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
+    st.markdown('</div>', unsafe_allow_html=True)
+
 
 with col11:
     # st.markdown('<div style="background-color:#90EE90 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
