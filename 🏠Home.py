@@ -94,7 +94,7 @@ with col3:
     st.markdown(html_code, unsafe_allow_html=True)
 
     
-    img_html = image_to_html('images/이미지생성.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81+(%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%83%9D%EC%84%B1)')
+    img_html = image_to_html('images/이미지생성.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EF%B8%8F%EC%83%9D%EA%B0%81+(%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%83%9D%EC%84%B1)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;font-size: 20px;"><strong>이미지 생성</strong> </span> </p>', unsafe_allow_html=True) 
     st.markdown('</div>', unsafe_allow_html=True)
@@ -111,7 +111,7 @@ with col4:
     """
     st.markdown(html_code, unsafe_allow_html=True)
 
-    img_html = image_to_html('images/마음이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8CAI')
+    img_html = image_to_html('images/마음이.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EB%A7%88%EC%9D%8CAI')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;font-szie:20px"><strong>마음AI에게 <br> 물어보세요!</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
@@ -126,7 +126,7 @@ with col5:
     """
     st.markdown(html_code, unsafe_allow_html=True)
 
-    img_html = image_to_html('images/반성하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%B0%B0%EC%9A%B0%EA%B3%A0_%EC%8B%B6%EC%9D%80%EC%A0%90)')
+    img_html = image_to_html('images/반성하기.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%A7%88%EC%9D%8C_%EB%B3%B8%EB%B0%9B%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong> 마음 본받기</strong></p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
@@ -139,7 +139,7 @@ with col6:
     </div>
     """
     st.markdown(html_code, unsafe_allow_html=True)
-    img_html = image_to_html('images/마음문장만들기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EC%A7%A7%EC%9D%80%EB%AC%B8%EC%9E%A5)')
+    img_html = image_to_html('images/마음문장만들기.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%A7%88%EC%9D%8C_%EB%AC%B8%EC%9E%A5_%EB%A7%8C%EB%93%A4%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;font-szie:20px;"><strong>마음 문장 만들기</strong> <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
@@ -152,7 +152,7 @@ with col7:
     </div>
     """
     st.markdown(html_code, unsafe_allow_html=True)
-    img_html = image_to_html('images/가사추천하기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%85%B8%EB%9E%98_%EB%A7%8C%EB%93%A4%EA%B8%B0)')
+    img_html = image_to_html('images/가사추천하기.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%85%B8%EB%9E%98_%EB%A7%8C%EB%93%A4%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong>노래 만들기 </strong>   <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
@@ -167,7 +167,7 @@ with col8:
     </div>
     """
     st.markdown(html_code, unsafe_allow_html=True)
-    img_html = image_to_html('images/실천이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
+    img_html = image_to_html('images/실천이.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong>실천AI에게<br>물어보세요!</strong></p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
@@ -180,7 +180,7 @@ with col9:
     </div>
     """
     st.markdown(html_code, unsafe_allow_html=True)
-    img_html = image_to_html('images/실천의지키우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9C+(%EA%B3%84%ED%9A%8D%EC%84%B8%EC%9A%B0%EA%B8%B0)')
+    img_html = image_to_html('images/실천의지키우기.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EC%8B%A4%EC%B2%9C+(%EC%9D%B8%EC%84%B1%ED%96%89%EB%8F%99%EC%8B%A4%EC%B2%9C%EA%B8%B0%EB%A1%9D)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong>인성 실천 행동기록</strong> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
@@ -194,7 +194,7 @@ with col10:
     </div>
     """
     st.markdown(html_code, unsafe_allow_html=True)    
-    img_html = image_to_html('images/내가하고싶은활동.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
+    img_html = image_to_html('images/내가하고싶은활동.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EC%8B%A4%EC%B2%9C+(%EB%82%B4%EA%B0%80_%ED%95%98%EA%B3%A0_%EC%8B%B6%EC%9D%80_%ED%99%9C%EB%8F%99)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong>내가 하고 싶은 활동</strong></p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
@@ -209,7 +209,7 @@ with col11:
     </div>
     """
     st.markdown(html_code, unsafe_allow_html=True)    
-    img_html = image_to_html('images/실천계획세우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
+    img_html = image_to_html('images/실천계획세우기.png', 'https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EC%8B%A4%EC%B2%9C+(%EC%9D%B8%EC%84%B1_%ED%85%8C%EC%8A%A4%ED%8A%B8)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong>인성 테스트</strong></p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
