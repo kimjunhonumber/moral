@@ -61,25 +61,25 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("""
-        <div style="background-color: #f8f8f8; padding: 20px; margin-bottom: 10px; border-radius: 10px; height: 200px;">
-            <h3 style="margin: 0; font-size: 15px;">예시 1) 인성 동화책 만들기</h3>
-            <p style="font-size: 12px;">- <a href="https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EF%B8%8F%EC%83%9D%EA%B0%81+(%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%83%9D%EC%84%B1)" target="_blank">생각 더하기 이미지 생성 활용</a></p>
+        <div style="background-color: #f8f8f8; padding: 20px; margin-bottom: 20px; border-radius: 10px; width: 100%;">
+            <h3 style="margin: 0; font-size: 18px;">예시 1) 인성 동화책 만들기</h3>
+            <p style="font-size: 14px;">- <a href="https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EF%B8%8F%EC%83%9D%EA%B0%81+(%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%83%9D%EC%84%B1)" target="_blank">생각 더하기 이미지 생성 활용</a></p>
         </div>
     """, unsafe_allow_html=True)
 
 with col2:
     st.markdown("""
-        <div style="background-color: #f8f8f8; padding: 20px; margin-bottom: 10px; border-radius: 10px; height: 200px;">
-            <h3 style="margin: 0; font-size: 15px;">예시 2) 인성 동요 만들기</h3>
-            <p style="font-size: 12px;">- <a href="https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%85%B8%EB%9E%98_%EB%A7%8C%EB%93%A4%EA%B8%B0)" target="_blank">마음+ 노래 만들기 활용</a></p>
+        <div style="background-color: #f8f8f8; padding: 20px; margin-bottom: 20px; border-radius: 10px; width: 100%;">
+            <h3 style="margin: 0; font-size: 18px;">예시 2) 인성 동요 만들기</h3>
+            <p style="font-size: 14px;">- <a href="https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EB%A7%88%EC%9D%8C+(%EB%85%B8%EB%9E%98_%EB%A7%8C%EB%93%A4%EA%B8%B0)" target="_blank">마음+ 노래 만들기 활용</a></p>
         </div>
     """, unsafe_allow_html=True)
 
 with col3:
     st.markdown("""
-        <div style="background-color: #f8f8f8; padding: 20px; margin-bottom: 10px; border-radius: 10px; height: 200px;">
-            <h3 style="margin: 0; font-size: 15px;">예시 3) 인성 퀴즈 만들기</h3>
-            <p style="font-size: 12px;">- <a href="https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EC%8B%A4%EC%B2%9CAI" target="_blank">실천AI 활용</a></p>
+        <div style="background-color: #f8f8f8; padding: 20px; margin-bottom: 20px; border-radius: 10px; width: 100%;">
+            <h3 style="margin: 0; font-size: 18px;">예시 3) 인성 퀴즈 만들기</h3>
+            <p style="font-size: 14px;">- <a href="https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EC%8B%A4%EC%B2%9CAI" target="_blank">실천AI 활용</a></p>
         </div>
     """, unsafe_allow_html=True)
 
