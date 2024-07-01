@@ -29,7 +29,7 @@ response1_value = int(response1[0]) if response1 else 0
 
 
 # 질문 2
-question2 = "2_ 내가 불편하지 않다면 다른 친구들이 하고 싶은 대로 하는 것이 마음이 편하다."
+question2 = "2_ 나는 타인의 의견을 존중하며, 의견이 다를 때도 공손하게 대한다."
 response2 = st.radio(f"2. {question2}", ["5 - 매우 그렇다", "4 - 조금 그렇다", "3 - 보통이다", "2 - 별로 그렇지 않다", "1 - 전혀 그렇지 않다"])
 response2_value = int(response2[0]) if response2 else 0
 
