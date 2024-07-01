@@ -1,35 +1,76 @@
 import streamlit as st
+from streamlit_gsheets import GSheetsConnection
 import pandas as pd
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
 
+# Display Title and Description
+st.title("Vendor Management Portal")
+st.markdown("Enter the details of the new vendor below.")
 
-scope = ['https://spreadsheets.google.com/feeds',
-'https://www.googleapis.com/auth/drive']
+# Establishing a Google Sheets connection
+conn = st.experimental_connection("gsheets", type=GSheetsConnection)
 
-#개인에 따라 수정 필요 - 다운로드 받았던 키 값 경로 
-json_key_path = "42607245e2b05134620d324153b73346587af820"	
+# Fetch existing vendors data
+existing_data = conn.read(worksheet="Vendors", usecols=list(range(6)), ttl=5)
+existing_data = existing_data.dropna(how="all")
 
-credential = ServiceAccountCredentials.from_json_keyfile_name(json_key_path, scope)
-gc = gspread.authorize(credential)
+# List of Business Types and Products
+BUSINESS_TYPES = [
+    "Manufacturer",
+    "Distributor",
+    "Wholesaler",
+    "Retailer",
+    "Service Provider",
+]
+PRODUCTS = [
+    "Electronics",
+    "Apparel",
+    "Groceries",
+    "Software",
+    "Other",
+]
 
+# Onboarding New Vendor Form
+with st.form(key="vendor_form"):
+    company_name = st.text_input(label="Company Name*")
+    business_type = st.selectbox("Business Type*", options=BUSINESS_TYPES, index=None)
+    products = st.multiselect("Products Offered", options=PRODUCTS)
+    years_in_business = st.slider("Years in Business", 0, 50, 5)
+    onboarding_date = st.date_input(label="Onboarding Date")
+    additional_info = st.text_area(label="Additional Notes")
 
-#개인에 따라 수정 필요 - 스프레드시트 url 가져오기
-spreadsheet_url = "https://docs.google.com/spreadsheets/d/1KksuDA2ZjkkNanlZXlw_t7iE7okYnI_UMxJZz8Lzl60/edit?usp=sharing"
+    # Mark mandatory fields
+    st.markdown("**required*")
 
-doc = gc.open_by_url(spreadsheet_url)
+    submit_button = st.form_submit_button(label="Submit Vendor Details")
 
-#개인에 따라 수정 필요 - 시트 선택하기 (시트명을 그대로 입력해주면 된다.)
-sheet = doc.worksheet("덕목")
+    # If the submit button is pressed
+    if submit_button:
+        # Check if all mandatory fields are filled
+        if not company_name or not business_type:
+            st.warning("Ensure all mandatory fields are filled.")
+            st.stop()
+        elif existing_data["CompanyName"].str.contains(company_name).any():
+            st.warning("A vendor with this company name already exists.")
+            st.stop()
+        else:
+            # Create a new row of vendor data
+            vendor_data = pd.DataFrame(
+                [
+                    {
+                        "CompanyName": company_name,
+                        "BusinessType": business_type,
+                        "Products": ", ".join(products),
+                        "YearsInBusiness": years_in_business,
+                        "OnboardingDate": onboarding_date.strftime("%Y-%m-%d"),
+                        "AdditionalInfo": additional_info,
+                    }
+                ]
+            )
 
-#데이터 프레임 생성하기
-df = pd.DataFrame(sheet.get_all_values())
+            # Add the new vendor data to the existing data
+            updated_df = pd.concat([existing_data, vendor_data], ignore_index=True)
 
-#불러온 데이터 프레임 정리
-df.rename(columns=df.iloc[0], inplace = True)
-df.drop(df.index[0], inplace=True)
+            # Update Google Sheets with the new vendor data
+            conn.update(worksheet="Vendors", data=updated_df)
 
-df.head()
-# 저장된 데이터 표시
-st.markdown("### 저장된 데이터")
-st.dataframe(st.session_state.data)
+            st.success("Vendor details successfully submitted!")
