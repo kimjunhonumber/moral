@@ -75,7 +75,7 @@ story = st.text_area("인성 스토리를 입력하세요")
 @st.cache_data  # st.experimental_memo 대신 st.cache_data 사용
 def generate_story(virtue, story):
     persona = f'''
-    이 프롬프트는 사용자로부터 제공된 가치덕목과 인성 스토리를 바탕으로 인성 광고 영상 스토리를 제작하는 GPT 모델입니다.
+    이 프롬프트는 사용자로부터 제공된 가치덕목과 인성 스토리를 바탕으로 인성 광고 영상 스토리를 제작하는 GPT 모델입니다. 스토리를 입력하면 동영상에 대한 묘사를 해주세요. 아주 짧은 형식의 광고영상을 만들겁니다.
     다음은 사용자가 제공한 내용입니다:
     가치덕목: {virtue}
     인성 스토리: {story}
