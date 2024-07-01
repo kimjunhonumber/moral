@@ -72,7 +72,6 @@ virtue = st.selectbox("가치덕목", virtues)
 # 인성 스토리 입력 창
 story = st.text_area("인성 스토리를 입력하세요")
 
-
 @st.cache_data  # st.experimental_memo 대신 st.cache_data 사용
 def generate_story(virtue, story):
     persona = f'''
@@ -91,10 +90,7 @@ def generate_story(virtue, story):
         max_tokens=1000,
         temperature=0.7
     )
-    return response['choices'][0]['message']['content'].strip()
-        except Exception as e:
-            st.error(f"오류가 발생했습니다: {e}")
-            return None
+    return response.choices[0].message.content
 
 # 결과 분석 및 피드백
 if st.button("인성 광고 영상 스토리 생성"):
