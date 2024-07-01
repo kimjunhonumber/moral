@@ -180,7 +180,7 @@ with col9:
     </div>
     """
     st.markdown(html_code, unsafe_allow_html=True)
-    img_html = image_to_html('images/실천계획세우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9C+(%EA%B3%84%ED%9A%8D%EC%84%B8%EC%9A%B0%EA%B8%B0)')
+    img_html = image_to_html('images/실천의지키우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9C+(%EA%B3%84%ED%9A%8D%EC%84%B8%EC%9A%B0%EA%B8%B0)')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong>인성 실천 행동기록</strong> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
@@ -205,7 +205,7 @@ with col11:
     </div>
     """
     st.markdown(html_code, unsafe_allow_html=True)    
-    img_html = image_to_html('images/실천의지키우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
+    img_html = image_to_html('images/실천계획세우기.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%8B%A4%EC%B2%9CAI')
     st.markdown(img_html, unsafe_allow_html=True)
     st.markdown('<p style="text-align:center;"><strong>인성 테스트</strong></p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
