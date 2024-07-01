@@ -25,11 +25,20 @@ st.markdown("<h3 style='text-align: center;'>덕이를 활용하여 내가 하�
 # 1, 2, 3번 항목을 나란히 배치
 col1, col2, col3 = st.columns(3)
 
+# with col1:
+#     st.markdown("""
+#         <div style="background-color: #f8f8f8; padding: 20px; margin-bottom: 10px; border-radius: 10px; height: 200px;">
+#             <h3 style="margin: 0;">예시 1) 인성 동화책 만들기</h3>
+#             <p>- 생각 더하기 이미지 생성 활용</p>
+#         </div>
+#     """, unsafe_allow_html=True)
+
+
 with col1:
     st.markdown("""
         <div style="background-color: #f8f8f8; padding: 20px; margin-bottom: 10px; border-radius: 10px; height: 200px;">
             <h3 style="margin: 0;">예시 1) 인성 동화책 만들기</h3>
-            <p>- 생각 더하기 이미지 생성 활용</p>
+            <p>- <a href="https://mtde7t3hvcz7afhxqgnnct.streamlit.app/%EF%B8%8F%EC%83%9D%EA%B0%81+(%EC%9D%B4%EB%AF%B8%EC%A7%80_%EC%83%9D%EC%84%B1)" target="_blank">생각 더하기 이미지 생성 활용</a></p>
         </div>
     """, unsafe_allow_html=True)
 
