@@ -91,10 +91,10 @@ def generate_story(virtue, story):
         max_tokens=1000,
         temperature=0.7
     )
-        return response['choices'][0]['message']['content'].strip()
-    except Exception as e:
-        st.error(f"오류가 발생했습니다: {e}")
-        return None
+    return response['choices'][0]['message']['content'].strip()
+        except Exception as e:
+            st.error(f"오류가 발생했습니다: {e}")
+            return None
 
 # 결과 분석 및 피드백
 if st.button("인성 광고 영상 스토리 생성"):
