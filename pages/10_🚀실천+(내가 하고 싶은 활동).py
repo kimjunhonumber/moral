@@ -72,6 +72,8 @@ virtue = st.selectbox("가치덕목", virtues)
 # 인성 스토리 입력 창
 story = st.text_area("인성 스토리를 입력하세요")
 
+
+@st.cache_data  # st.experimental_memo 대신 st.cache_data 사용
 def generate_story(virtue, story):
     persona = f'''
     이 프롬프트는 사용자로부터 제공된 가치덕목과 인성 스토리를 바탕으로 인성 광고 영상 스토리를 제작하는 GPT 모델입니다.
