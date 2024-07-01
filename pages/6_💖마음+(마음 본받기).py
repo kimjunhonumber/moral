@@ -31,7 +31,7 @@ client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 st.set_page_config(layout="wide")
 
-st.title("생각+ 생각키우기")
+st.title("마음+마음 문장 만들기")
 
 # 이미지 파일 경로
 image_path = 'images/마음문장.png'  # 여기에 이미지 파일 경로를 입력하세요
