@@ -80,7 +80,7 @@ def generate_story(virtue, story):
     인성 스토리: {story}
     '''
 
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": persona},
