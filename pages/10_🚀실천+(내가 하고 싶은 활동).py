@@ -91,6 +91,10 @@ with col3:
         </div>
     """, unsafe_allow_html=True)
 
+
+# st.markdown("<h3 style='text-align: center;'>예시4) 인성 광고 영상 만들기</h3>", unsafe_allow_html=True)
+
+
 # 덕목 드롭다운
 virtues = ["예절", "효", "정직", "책임", "존중", "배려", "소통", "협동"]
 virtue = st.selectbox("가치덕목", virtues)
