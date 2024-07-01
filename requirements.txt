@@ -6,4 +6,3 @@ openpyxl
 pandas
 matplotlib
 seaborn
-streamlit_gsheets
