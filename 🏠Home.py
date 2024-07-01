@@ -35,7 +35,7 @@ with col2:
 
 # 애플리케이션 소개
 st.markdown("""
-    <div style="text-align: center;">
+    <div style="text-align: center;margin-bottom: 20px;">
         <span style="font-size: 24px; font-weight: bold;">
             🌟초등학생들의 인성교육을 위해 제작된 AI 챗봇입니다. 
         </span>
