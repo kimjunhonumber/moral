@@ -92,7 +92,7 @@ with col3:
     """, unsafe_allow_html=True)
 
 
-# st.markdown("<h3 style='text-align: center;'>예시4) 인성 광고 영상 만들기</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>예시4) 인성 광고 영상 만들기</h3>", unsafe_allow_html=True)
 
 
 # 덕목 드롭다운
