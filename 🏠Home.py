@@ -46,18 +46,30 @@ st.markdown("""
 # 1행
 col1, col2, col3 = st.columns([1, 1, 1])
 
-with col1:
-    # # st.markdown('<div style="background-color:#4169E1; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
-    # # st.markdown('<h3 style="text-align:center;">생각AI</h3>', unsafe_allow_html=True)
 
-    # 파란색 막대 안에 글을 넣는 HTML 코드
-    html_code = """
-    <div style="background-color:#4169E1; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: ">
-        <h3 style="margin: 0; font-size: 20px;text-align:center;">생각AI</h3>
-    </div>
-    """
-    # HTML 코드를 Streamlit에 표시
-    st.markdown(html_code, unsafe_allow_html=True)
+with col1:
+    st.markdown("""
+        <div style="background-color:#4169E1; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%;">
+            <h3 style="margin: 0; font-size: 20px;">생각AI</h3>
+        </div>
+    """, unsafe_allow_html=True)
+    img_html = image_to_html('images/생각이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81AI')
+    st.markdown(img_html, unsafe_allow_html=True)
+    st.markdown('<p style="text-align:center;">덕목의 의미<br>갈등 상황</p>', unsafe_allow_html=True)
+
+
+# with col1:
+#     # # st.markdown('<div style="background-color:#4169E1; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
+#     # # st.markdown('<h3 style="text-align:center;">생각AI</h3>', unsafe_allow_html=True)
+
+#     # 파란색 막대 안에 글을 넣는 HTML 코드
+#     html_code = """
+#     <div style="background-color:#4169E1; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 10px; text-align:center; color: white; width: 100%; display: ">
+#         <h3 style="margin: 0; font-size: 20px;text-align:center;">생각AI</h3>
+#     </div>
+#     """
+#     # HTML 코드를 Streamlit에 표시
+#     st.markdown(html_code, unsafe_allow_html=True)
 
 
     img_html = image_to_html('images/생각이.png', 'https://2gaeyouhl8fwhqotlwa9uz.streamlit.app/%EC%83%9D%EA%B0%81AI')
