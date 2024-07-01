@@ -198,47 +198,7 @@ with col10:
     st.markdown('<p style="text-align:center;"><strong>인성 테스트</strong></p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
 
-import streamlit as st
 
-# 사이드바에 색상을 적용한 목차 만들기
-st.sidebar.markdown("""
-    <style>
-    .sidebar-text {
-        font-size: 24px;
-        font-weight: bold;
-        padding: 10px 0;
-        color: #00BFFF;
-        text-shadow: 1px 1px 2px black;
-    }
-    .sidebar-item-1 {
-        color: #1E90FF;  /* Dodger Blue */
-    }
-    .sidebar-item-2 {
-        color: #32CD32;  /* Lime Green */
-    }
-    .sidebar-item-3 {
-        color: #FF6347;  /* Tomato */
-    }
-    .sidebar-item-4 {
-        color: #FFD700;  /* Gold */
-    }
-    .sidebar-item-5 {
-        color: #8A2BE2;  /* Blue Violet */
-    }
-    </style>
-    <div class="sidebar-text sidebar-item-1"><a href="1_생각AI" style="color: inherit; text-decoration: none;">1_생각AI</a></div>
-    <div class="sidebar-text sidebar-item-2"><a href="2_생각+(생각의 힘)" style="color: inherit; text-decoration: none;">2_생각+(생각의 힘)</a></div>
-    <div class="sidebar-text sidebar-item-2"><a href="3_생각+(이미지 생성)" style="color: inherit; text-decoration: none;">3_생각+(이미지 생성)</a></div>
-    <div class="sidebar-text sidebar-item-3"><a href="4_마음AI" style="color: inherit; text-decoration: none;">4_마음AI</a></div>
-    <div class="sidebar-text sidebar-item-3"><a href="5_마음+(배우고 싶은점)" style="color: inherit; text-decoration: none;">5_마음+(배우고 싶은점)</a></div>
-    <div class="sidebar-text sidebar-item-3"><a href="6_마음+(짧은문장)" style="color: inherit; text-decoration: none;">6_마음+(짧은문장)</a></div>
-    <div class="sidebar-text sidebar-item-3"><a href="7_마음+(노래 만들기)" style="color: inherit; text-decoration: none;">7_마음+(노래 만들기)</a></div>
-    <div class="sidebar-text sidebar-item-4"><a href="8_실천AI" style="color: inherit; text-decoration: none;">8_실천AI</a></div>
-    <div class="sidebar-text sidebar-item-4"><a href="9_실천+(계획세우기)" style="color: inherit; text-decoration: none;">9_실천+(계획세우기)</a></div>
-    <div class="sidebar-text sidebar-item-4"><a href="10_실천+(놀이터)" style="color: inherit; text-decoration: none;">10_실천+(놀이터)</a></div>
-    """, unsafe_allow_html=True)
-
-st.title("주요 목차")
 
 
 
