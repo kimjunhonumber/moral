@@ -70,7 +70,7 @@ virtues = ["예절", "효", "정직", "책임", "존중", "배려", "소통", "�
 virtue = st.selectbox("가치덕목", virtues)
 
 # 인성 스토리 입력 창
-story = st.text_area("인성 스토리를 입력하세요")
+story = st.text_area("인성을 주제로 한 스토리를 입력하세요")
 
 @st.cache_data  # st.experimental_memo 대신 st.cache_data 사용
 def generate_story(virtue, story):
