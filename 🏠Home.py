@@ -157,7 +157,7 @@ with col7:
     st.markdown('<p style="text-align:center;"><strong>노래 만들기 </strong>   <br> <span style="color:rgba(0,0,0,0);"> 이미지 생성 </span> </p>', unsafe_allow_html=True)  # 공백을 추가하여 두 줄로 표현
     st.markdown('</div>', unsafe_allow_html=True)
 # 3행
-col8, col9, col10 = st.columns([1, 1, 1])
+col8, col9, col10, col11 = st.columns([1, 1, 1,1])
 with col8:
     # st.markdown('<div style="background-color:#32CD32 ; padding: 10px; border-radius: 10px; text-align:center;">', unsafe_allow_html=True)
     # st.markdown('<h3 style="text-align:center;">실천AI</h3>', unsafe_allow_html=True)
