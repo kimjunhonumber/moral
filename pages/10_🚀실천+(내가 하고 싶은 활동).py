@@ -64,3 +64,38 @@ st.markdown("""
         <h3 style="margin: 0;">예시 4) 인성 광고 영상 만들기</h3>
     </div>
 """, unsafe_allow_html=True)
+
+# 덕목 드롭다운
+virtues = ["예절", "효", "정직", "책임", "존중", "배려", "소통", "협동"]
+virtue = st.selectbox("가치덕목", virtues)
+
+# 인성 스토리 입력 창
+story = st.text_area("인성 스토리를 입력하세요")
+
+def generate_story(virtue, story):
+    persona = f'''
+    이 프롬프트는 사용자로부터 제공된 가치덕목과 인성 스토리를 바탕으로 인성 광고 영상 스토리를 제작하는 GPT 모델입니다.
+    다음은 사용자가 제공한 내용입니다:
+    가치덕목: {virtue}
+    인성 스토리: {story}
+    '''
+
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": persona},
+            {"role": "user", "content": "위 내용을 바탕으로 인성 광고 영상 스토리를 작성해 주세요."}
+        ],
+        max_tokens=1000,
+        temperature=0.7
+    )
+    return response.choices[0].message['content'].strip()
+
+# 결과 분석 및 피드백
+if st.button("인성 광고 영상 스토리 생성"):
+    if virtue and story:
+        generated_story = generate_story(virtue, story)
+        st.markdown("## 인성 광고 영상 스토리")
+        st.write(generated_story)
+    else:
+        st.error("가치덕목과 인성 스토리를 모두 입력해 주세요.")
