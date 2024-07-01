@@ -19,7 +19,7 @@ st.set_page_config(page_title="실천+ 내가 하고 싶은 활동")
 
 # 제목을 가운데 정렬
 st.markdown("<h1 style='text-align: center;'>실천+내가 하고 싶은 활동</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center;'>활동 후 인성 실천놀이터에 올려주세요.</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>덕이를 활용하여 내가 하고 싶은 인성활동을 해보세요.</h3>", unsafe_allow_html=True)
 
 
 # 1, 2, 3번 항목을 나란히 배치
