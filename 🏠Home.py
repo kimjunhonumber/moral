@@ -37,7 +37,7 @@ with col2:
 st.markdown("""
     <div style="text-align: center;">
         <span style="font-size: 24px; font-weight: bold;">
-            🌟초등학생들의 인성교육을 위해 제작된 AI 챗봇입니다. <br> 무엇을 도와 드릴까요?
+            🌟초등학생들의 인성교육을 위해 제작된 AI 챗봇입니다. 
         </span>
     </div>
 """, unsafe_allow_html=True)
