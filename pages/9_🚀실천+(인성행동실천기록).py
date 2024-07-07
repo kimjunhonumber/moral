@@ -10,7 +10,7 @@ st.markdown("내가 실천한 인성관련 요소를 기록해 보세요.")
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
 
 # Fetch existing vendors data
-existing_data = conn.read(worksheet="moral", usecols=list(range(6)), ttl=5)
+existing_data = conn.read(worksheet="Vendors", usecols=list(range(6)), ttl=5)
 existing_data = existing_data.dropna(how="all")
 
 # List of Business Types and Products
