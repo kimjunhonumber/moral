@@ -1,6 +1,6 @@
 openai
 streamlit
-git+https://github.com/streamlit/gsheets-connection
+gsheets-connection
 Pillow
 openpyxl
 pandas
