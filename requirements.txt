@@ -1,9 +1,10 @@
 openai
-streamlit
-st-gsheets-connection
 gspread
-numpy
 Pillow
 openpyxl
 pandas
 oauth2client
+streamlit==1.36.0
+st-gsheets-connection==0.0.4
+pandas==1.5.3
+numpy==1.26.4
