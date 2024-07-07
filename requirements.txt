@@ -1,9 +1,10 @@
 openai
 streamlit
 st-gsheets-connection
-gspread
-numpy
+wikipedia==1.4.0
 Pillow
 openpyxl
 pandas
+matplotlib
+seaborn
 oauth2client
