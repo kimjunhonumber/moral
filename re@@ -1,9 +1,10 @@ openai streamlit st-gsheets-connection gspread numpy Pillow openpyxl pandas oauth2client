@@ -1,9 +1,9 @@
 openai
 streamlit
-pandas
 st-gsheets-connection
 gspread
+numpy
 Pillow
 openpyxl
+pandas
 oauth2client
-numpy
