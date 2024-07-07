@@ -1,5 +1,5 @@
 import streamlit as st
-import GSheetsConnection from streamlit_gsheets 
+from streamlit_gsheets import GSheetsConnection 
 import pandas as pd
 
 # Display Title and Description
