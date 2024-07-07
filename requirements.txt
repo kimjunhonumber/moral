@@ -1,5 +1,5 @@
 openai
-streamlit==1.28
+streamlit
 st-gsheets-connection
 Pillow
 openpyxl
