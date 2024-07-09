@@ -27,17 +27,12 @@ st.title("인성 행동 실천 기록")
 
 name = st.text_input("이름")
 date = st.date_input("날짜")
-age = st.number_input("나이", min_value=0, max_value=120)
-virtues = ["예절", "효", "정직", "책임", "존중", "배려", "소통", "협동"]
-virtue = st.selectbox("가치덕목", virtues)
+age = st.number_input("나이", min_value=0)
+virtue = st.text_input("덕목")
 action = st.text_area("실천한 일")
-thought = st.text_area("실천하며 느낀 점")
+thought = st.text_area("느낀 점")
 
 if st.button("제출"):
-    if name and date and virtue and action and thought:
-        # 입력된 데이터를 Google Sheets에 추가
-        worksheet.append_row([str(date), name, age, virtue, action, thought])
-        st.success("데이터가 성공적으로 제출되었습니다!")
-    else:
-        st.error("모든 필드를 입력해 주세요.")
+    worksheet.append_row([str(date), name, age, virtue, action, thought])
+    st.success("데이터가 성공적으로 제출되었습니다!")
 
