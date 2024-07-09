@@ -2,6 +2,8 @@ openai
 streamlit
 st-gsheets-connection
 wikipedia==1.4.0
+gspread==5.1.1
+google-auth==2.6.6
 Pillow
 openpyxl
 pandas
