@@ -29,7 +29,8 @@ name = st.text_input("이름")
 date = st.date_input("날짜")
 grade = st.selectbox("학년", options=[f"{i}학년" for i in range(1, 7)])
 virtues = ["예", "존중", "배려", "정직", "효", "소통", "책임", "협동"]
-virtue = st.selectbox("덕목", options=virtues)action = st.text_area("실천한 일")
+virtue = st.selectbox("덕목", options=virtues)
+action = st.text_area("실천한 일")
 thought = st.text_area("느낀 점")
 
 if st.button("제출"):
