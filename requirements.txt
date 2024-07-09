@@ -8,3 +8,6 @@ pandas
 matplotlib
 seaborn
 oauth2client
+deta
+streamlit_option_menu
+plotly
