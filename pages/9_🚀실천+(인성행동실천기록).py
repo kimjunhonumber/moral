@@ -12,11 +12,11 @@ scope = [
 ]
 
 credentials = Credentials.from_service_account_info(
-    st.secrets["gsheets"], scopes=scope)
+    st.secrets["connections"]["gsheets"], scopes=scope)
 client = gspread.authorize(credentials)
 
 # Google Sheets URL 또는 ID
-SPREADSHEET_URL = st.secrets["spreadsheet_url"]
+SPREADSHEET_URL = st.secrets["connections"]["gsheets"]["spreadsheet"]
 
 # Google Sheets 열기
 spreadsheet = client.open_by_url(SPREADSHEET_URL)
@@ -35,5 +35,4 @@ thought = st.text_area("느낀 점")
 if st.button("제출"):
     worksheet.append_row([str(date), name, age, virtue, action, thought])
     st.success("데이터가 성공적으로 제출되었습니다!")
-
 
