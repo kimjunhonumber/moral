@@ -36,3 +36,4 @@ if st.button("제출"):
     worksheet.append_row([str(date), name, age, virtue, action, thought])
     st.success("데이터가 성공적으로 제출되었습니다!")
 
+
