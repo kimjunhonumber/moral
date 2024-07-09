@@ -1,6 +1,5 @@
 openai
 streamlit
-st-gsheets-connection
 wikipedia==1.4.0
 gspread
 google-auth
