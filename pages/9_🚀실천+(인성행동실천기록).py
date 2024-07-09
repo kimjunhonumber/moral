@@ -40,3 +40,4 @@ if st.button("제출"):
         st.success("데이터가 성공적으로 제출되었습니다!")
     else:
         st.error("모든 필드를 입력해 주세요.")
+
